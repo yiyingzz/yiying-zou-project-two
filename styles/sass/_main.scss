@@ -1,0 +1,134 @@
+.techniques {
+    padding-top: 150px;
+    display: flex;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 50%;
+    }
+
+    i {
+        font-size: 1.5rem;
+        color: $secondaryTextColor;
+        position: relative;
+
+        border: 1px dashed deeppink;
+    }
+
+    // Use transform -50% trick??/
+    //  or separate div
+    i::after {
+        content: '';
+        background: $accentColor;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        z-index: -1;
+
+    }
+}
+
+
+.gallery,
+.discover {
+    background: $secondaryColor;
+    color: $secondaryTextColor;
+    
+    h5 {
+        color: $secondaryTextColor;
+    }
+}
+
+.gallery img {
+    width: calc(30%);
+}
+
+.discover-container,
+.locations-container {
+    display: flex;
+}
+
+.locations-container img {
+    order: 1;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+}
+
+
+.banner-container img {
+    width: 100%;
+}
+
+.search {
+    text-aligN: center;
+
+    a {
+        margin: 0 auto;
+    }
+}
+
+
+// Blog styles
+
+article,
+aside {
+    background: $secondaryColor;
+    
+    p {
+        color: $secondaryTextColor;
+    }
+}
+
+article {
+    p.blog-date {
+        color: $primaryColor;
+    }
+}
+
+
+.blog-comments {
+
+    p.comment-date {
+        color: $secondaryColor;
+        font-weight: bold;
+    }
+}
+
+.blog-comment {
+    display: flex;
+}
+
+
+// .comment-form {
+
+//     input[id="name"],
+//     input[id="email"] {
+//     }
+
+//     input[id="name"],
+//     input[id="email"],
+//     textarea {
+//         background: $primaryColor;
+//     }
+
+// }
+
+
+// Contact page
+.contact-form {
+    background: $secondaryColor;
+    color: $secondaryTextColor;
+}
+

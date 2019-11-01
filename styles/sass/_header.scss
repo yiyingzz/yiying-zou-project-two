@@ -1,0 +1,56 @@
+.header-top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    a {
+        font-weight: bold;
+        line-height: 29px;
+        letter-spacing: 1.4px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5px 0;
+        margin: 20px 0px 20px 40px;
+
+        font-family: $primaryFont;
+        color: $secondaryColor;
+        width: initial;
+        height: initial;
+        background: initial;
+
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $accentColor;
+        }
+    }
+}
+
+.header-home {
+    background-image: url(../assets/header-home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    position: relative;
+}
+
+.home-box-img {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+}
+
+.header-blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    height: 70vh;
+}
+
+.header-contact {
+    background-image: url(../assets/contact-header.jpg);
+    background-size: cover;
+    height: 70vh;
+}
+
+
