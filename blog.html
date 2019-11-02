@@ -26,78 +26,91 @@
                     </nav>
                 </div>
 
-                <!-- h1 -->
                 <h2>Blog</h2>
             </div>
         </header>
 
         <main>
+            
+            
+            <section class="blog-section">
+                <!-- blog post -->
+                <div class="blog-post-container">
+                    
+                    <img src="./assets/blog-post-image.jpg" class="right-shadow" alt="">
+                    
+                    <article>
+                        <h6>Our new collection</h6>
+                        <p class="blog-date">Monday, Octob  er 5th, 2019 by Saron</p>
+                        
+                        <div class="blog-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aspernatur quam mollitia quisquam tempora consectetur provident enim veritatis distinctio tempore dolores deleniti sunt ut incidunt, amet reiciendis nulla iure quaerat?</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita ipsam magni dicta dignissimos nesciunt, eveniet odit sed velit eius repellendus ea animi vero quaerat facere aut, ex corrupti nisi qui. Voluptatum exercitationem ex nulla aspernatur possimus magnam velit facere, neque facilis pariatur! Officiis, ipsum!</p>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae vel libero blanditiis recusandae asperiores veniam voluptas minima ipsa. Ad mollitia in autem dolores aliquid sit repudiandae ex corporis placeat, reprehenderit obcaecati beatae. Quos suscipit atque impedit, amet vitae nostrum sint in facere accusantium animi consequuntur, praesentium, nam reprehenderit rem? Reiciendis laborum cum, perferendis consequatur quos reprehenderit fuga aperiam. Hic possimus natus magni iste expedita.</p>
+                            
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, aut. Iure voluptatum repudiandae dolores omnis excepturi numquam incidunt qui consectetur natus eaque adipisci, ipsum doloribus expedita eum et totam magni.</p>
+                        </div>
+                    
+                    </article>
+                </div>
+                
+                <!-- comments -->
+                <section class="blog-comments">
+                    <h4>Comments:</h4>
+                    
+                    <div class="blog-comment">
+                        <img src="./assets/comment-1.jpg" alt="">
+                        <div>
+                            <p class="comment-date">Tuesday December 9th, 2019 by Louise</p>
+                            <p class="comment-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aperiam quae vero nemo nostrum dolore, hic illo ut ex sunt error officia iste placeat? Autem hic odit quia! Ducimus labore officia fuga quod tempore iste.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-comment">
+                        <img src="./assets/comment-2.jpg" alt="">
+                        <div>
+                            <p class="comment-date">Wednesday December 10th, 2019 by JP</p>
+                            <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit inventore dolorem dolores, error adipisci, nam aliquam nobis porro itaque aperiam eum suscipit quis dignissimos enime?</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <form action="#" method="#" class="comment-form">
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        
+                        <label for="email" class="visuallyHidden">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        
+                        <label for="comment" class="visuallyHidden">Comment</label>
+                        <textarea id="comment" name="comment" placeholder="Comment" required></textarea>
+                        
+                        <button type="submit">Post Comment</button>
+                    </form>
+                </section>
+            </section>
+
             <!-- IS THIS ASIDE??? -->
             <aside>
-                <img src="./assets/sidebar-image.jpg">
-                <h6>Our mission</h6>
-
-                <h6>Recent posts</h6>
-            </aside>
+                <div class="aside-content">
+                    <img src="./assets/sidebar-image.jpg" class="left-shadow">
+                    <h6>Our mission</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, tenetur! Dignissimos obcaecati et reiciendis ullam magnam culpa ab cum velit.</p>
+                    <h6>Recent posts</h6>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit.</p></li>
+                        <li><p>Lorem ipsum dolor sit.</p></li>
+                        <li><p>Lorem ipsum dolor sit.</p></li>
+                        <li><p>Lorem ipsum dolor sit.</p></li>
+                    </ul>
+                </div>
+            </aside>       
             
-
-
-                <!-- blog post -->
-            <article>
-
-                <img src="./assets/blog-post-image.jpg" class="right-shadow" alt="">
-
-                <h6>Our new collection</h6>
-                <p class="blog-date">Monday, October 5th, 2019 by Saron</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aspernatur quam mollitia quisquam tempora consectetur provident enim veritatis distinctio tempore dolores deleniti sunt ut incidunt, amet reiciendis nulla iure quaerat?</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita ipsam magni dicta dignissimos nesciunt, eveniet odit sed velit eius repellendus ea animi vero quaerat facere aut, ex corrupti nisi qui. Voluptatum exercitationem ex nulla aspernatur possimus magnam velit facere, neque facilis pariatur! Officiis, ipsum!</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae vel libero blanditiis recusandae asperiores veniam voluptas minima ipsa. Ad mollitia in autem dolores aliquid sit repudiandae ex corporis placeat, reprehenderit obcaecati beatae. Quos suscipit atque impedit, amet vitae nostrum sint in facere accusantium animi consequuntur, praesentium, nam reprehenderit rem? Reiciendis laborum cum, perferendis consequatur quos reprehenderit fuga aperiam. Hic possimus natus magni iste expedita.</p>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, aut. Iure voluptatum repudiandae dolores omnis excepturi numquam incidunt qui consectetur natus eaque adipisci, ipsum doloribus expedita eum et totam magni.</p>
-
-            </article>
-
-            <!-- comments -->
-            <section class="blog-comments">
-                <h4>Comments:</h4>
-
-                <div class="blog-comment">
-                    <img src="./assets/comment-1.jpg" alt="">
-                    <div>
-                        <p class="comment-date">Tuesday December 9th, 2019 by Louise</p>
-                        <p class="comment-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aperiam quae vero nemo nostrum dolore, hic illo ut ex sunt error officia iste placeat? Autem hic odit quia! Ducimus labore officia fuga quod tempore iste.</p>
-                    </div>
-                </div>
-
-                <div class="blog-comment">
-                    <img src="./assets/comment-2.jpg" alt="">
-                    <div>
-                        <p class="comment-date">Wednesday December 10th, 2019 by JP</p>
-                        <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit inventore dolorem dolores, error adipisci, nam aliquam nobis porro itaque aperiam eum suscipit quis dignissimos enime?</p>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <form class="comment-form">
-                    <label for="name" class="visuallyHidden">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-    
-                    <label for="email" class="visuallyHidden">Email Address</label>
-                    <input type="email" id="email" placeholder="Email address">
-    
-                    <label for="comment" class="visuallyHidden">Comment</label>
-                    <textarea id="comment" placeholder="Comment" required></textarea>
-    
-                    <button type="submit">Post Comment</button>
-                </form>
-            </section>
-
         </main>
-
+            
         <footer>
             <p>Copyright &copy; 2019 Juno College</p>
         </footer>

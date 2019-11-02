@@ -3,11 +3,11 @@
     display: flex;
 }
 
-.events {
+.events-section {
     display: flex;
     flex-wrap: wrap;
 
-    div {
+    .event-container {
         width: 50%;
     }
 
@@ -72,7 +72,7 @@
 }
 
 .search {
-    text-aligN: center;
+    text-align: center;
 
     a {
         margin: 0 auto;
@@ -80,10 +80,26 @@
 }
 
 
+
+
 // Blog styles
 
-article,
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-section {
+    width: 65%;
+}
+
 aside {
+    width: 25%;
+}
+
+article,
+.aside-content {
     background: $secondaryColor;
     
     p {
@@ -92,10 +108,20 @@ aside {
 }
 
 article {
+    border-right: 15px solid $secondaryColor;
+    box-shadow: 15px 15px 0 $accentColor;
+
+    img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
+
     p.blog-date {
         color: $primaryColor;
     }
 }
+
 
 
 .blog-comments {
@@ -110,25 +136,41 @@ article {
     display: flex;
 }
 
+.comment-form {
+    // @include formStyles($primaryColor, $primaryTextColor);
 
-// .comment-form {
-
-//     input[id="name"],
-//     input[id="email"] {
-//     }
-
-//     input[id="name"],
-//     input[id="email"],
-//     textarea {
-//         background: $primaryColor;
-//     }
-
-// }
-
-
-// Contact page
-.contact-form {
-    background: $secondaryColor;
-    color: $secondaryTextColor;
+    input[id="name"],
+    input[id="email"],
+    textarea {
+        @include formStyles($primaryColor, $primaryTextColor);
+    }
 }
 
+// Contact page
+
+.contact-container {
+    display: flex;
+}
+
+.contact-form {
+    position: relative;
+    bottom: 100px;
+    width: 70%;
+    
+    @include formStyles($secondaryColor, $secondaryTextColor);
+    
+    input[id="name"],
+    input[id="email"],
+    textarea {
+        @include formStyles($secondaryColor, $secondaryTextColor);
+    }
+}
+
+.contact-info {
+    padding: 50px 0 100px 60px;
+
+    p:not(:first-of-type) {
+        margin: 0;
+    }
+    
+}

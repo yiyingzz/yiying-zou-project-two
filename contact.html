@@ -32,30 +32,33 @@
     </header>
 
     <main>
-        <section>
+        <section class="contact-container wrapper">
 
-            <form class="contact-form right-shadow">
+            <form action="#" method="#" class="contact-form right-shadow">
                 <label for="name" class="visuallyHidden">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name" placeholder="Name">
 
                 <label for="email" class="visuallyHidden">Email Address</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" placeholder="Email address">
 
                 <label for="message" class="visuallyHidden">Message</label>
-                <textarea id="message"></textarea>
+                <textarea id="message" name="message" placeholder="Message" rows="7"></textarea>
 
                 <button type="submit">Submit</button>
             </form>
 
-            <div>
+            <div class="contact-info">
                 <div class="social-media-icons">
-                    <!-- icons -->
+                    <a href="#" aria-label="Go to our Facebook page"><i class="fab fa-facebook-f" aria-hidden></i></a>
+                    <a href="#" aria-label="Go to our Instagram page"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Go to our Twitter page"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Go to our WhatsApp page"><i class="fab fa-whatsapp"></i></a>
                 </div>
                 <p>info@email.com</p>
 
                 <p>123 - 456 - 7890</p>
                 <p>123 Queen Street West, Unit 10</p>
-                <p>Toront, Ontario</p>
+                <p>Toronto, Ontario</p>
                 <p>M5V 2D5</p>
 
             </div>

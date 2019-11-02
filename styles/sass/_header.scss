@@ -32,25 +32,29 @@ nav {
     background-position: center;
     height: 95vh;
     position: relative;
+
+    h1 {
+        margin-top: 70px;
+        width: 650px;
+    }
 }
 
 .home-box-img {
-    width: 50%;
+    width: 60%;
     position: absolute;
     left: 0;
-    bottom: -120px;
+    bottom: -150px;
 }
 
 .header-blog {
     background-image: url(../assets/blog-header.jpg);
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
 }
 
 .header-contact {
     background-image: url(../assets/contact-header.jpg);
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
 }
-
 
