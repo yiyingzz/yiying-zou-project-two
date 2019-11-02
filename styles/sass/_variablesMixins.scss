@@ -21,3 +21,10 @@ $bodyFontSize: 1rem;
     color: $formTextColor;
 }
 
+@mixin buttonStyles($bgColor, $textColor) {
+    background: $bgColor;
+    color: $textColor;
+    font-family: $secondaryFont;
+    text-transform: lowercase;
+    text-align: center;
+}

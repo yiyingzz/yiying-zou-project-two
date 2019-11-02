@@ -282,17 +282,20 @@ body {
   letter-spacing: 1.7px;
 }
 
+section {
+  padding: 60px 0;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Pacifico", cursive;
-  color: #1A315C;
   margin: 0;
 }
 
-section {
-  padding: 60px 0;
+h1 {
+  color: #1A315C;
 }
 
 h1 {
@@ -340,13 +343,8 @@ a {
 }
 
 button {
-  font-family: "Pacifico", cursive;
-  color: #fff;
-  text-transform: lowercase;
-  text-align: center;
   width: 240px;
   padding: 10px;
-  background: #1A315C;
 }
 
 .right-shadow {
@@ -473,19 +471,49 @@ nav a:hover, nav a:focus {
   width: calc(70% - 40px);
 }
 
+.about-section button {
+  background: #1A315C;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.about-section h2,
+.connect-section h2 {
+  color: #1A315C;
+  font-size: 2.15rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.7px;
+}
+
 .gallery,
 .discover-section {
   background: #1A315C;
   color: #fff;
 }
 
-.gallery h5,
-.discover-section h5 {
+.gallery img {
+  width: calc(30%);
+}
+
+.discover-section h3,
+.search-section h3 {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.5px;
+}
+
+.discover-section h3 {
   color: #fff;
 }
 
-.gallery img {
-  width: calc(30%);
+.discover-section button {
+  background: #CCEDFB;
+  color: #1E1713;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .discover-container,
@@ -501,7 +529,7 @@ nav a:hover, nav a:focus {
           order: 1;
 }
 
-.events-section {
+.connect-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,19 +537,28 @@ nav a:hover, nav a:focus {
       flex-wrap: wrap;
 }
 
-.events-section .event-container {
+.connect-section .connect-container {
   width: 50%;
 }
 
-.events-section i {
+.connect-section i {
   font-size: 1.5rem;
   color: #fff;
   position: relative;
   border: 1px dashed deeppink;
 }
 
-.events-section i::after {
+.connect-section i::after {
   content: '';
+  background: #0CADC0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
 }
 
 .banner-container img {
@@ -532,76 +569,16 @@ nav a:hover, nav a:focus {
   text-align: center;
 }
 
-.search-section a {
-  margin: 0 auto;
-}
-
-.blog-comments h4 {
-  letter-spacing: 4.3px;
-  color: #161515;
-}
-
-.blog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.blog-section {
-  width: 65%;
-}
-
-.blog-section img {
-  width: 100%;
-  position: relative;
-  top: -100px;
-}
-
-aside {
-  width: 25%;
-}
-
-article,
-.aside-content {
-  background: #1A315C;
-}
-
-article p,
-.aside-content p {
-  color: #fff;
-}
-
-article {
-  border-right: 15px solid #1A315C;
-  -webkit-box-shadow: 15px 15px 0 #0CADC0;
-          box-shadow: 15px 15px 0 #0CADC0;
-}
-
-article p.blog-date {
-  color: #CCEDFB;
-}
-
-.blog-comments p.comment-date {
+.search-section h3 {
   color: #1A315C;
-  font-weight: bold;
 }
 
-.blog-comment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.comment-form input[id="name"],
-.comment-form input[id="email"],
-.comment-form textarea {
-  background: #CCEDFB;
-  color: #1E1713;
+.search-section button {
+  background: #1A315C;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .contact-container {
@@ -631,6 +608,74 @@ article p.blog-date {
 
 .contact-info p:not(:first-of-type) {
   margin: 0;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-section {
+  width: 65%;
+}
+
+.blog-section img {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+
+.blog-aside {
+  width: 25%;
+}
+
+article,
+.aside-content {
+  background: #1A315C;
+}
+
+article p,
+.aside-content p {
+  color: #fff;
+}
+
+article {
+  border-right: 15px solid #1A315C;
+  -webkit-box-shadow: 15px 15px 0 #0CADC0;
+          box-shadow: 15px 15px 0 #0CADC0;
+}
+
+article p.blog-date {
+  color: #CCEDFB;
+}
+
+.blog-comments p.comment-date {
+  color: #1A315C;
+  font-weight: bold;
+}
+
+.blog-comments h3 {
+  letter-spacing: 4.3px;
+  color: #161515;
+}
+
+.blog-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-form input[id="name"],
+.comment-form input[id="email"],
+.comment-form textarea {
+  background: #CCEDFB;
+  color: #1E1713;
 }
 
 footer {

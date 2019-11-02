@@ -1,0 +1,70 @@
+// Blog styles
+
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-section {
+    width: 65%;
+    
+    img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
+}
+
+.blog-aside {
+    width: 25%;
+}
+
+article,
+.aside-content {
+    background: $secondaryColor;
+    
+    p {
+        color: $secondaryTextColor;
+    }
+}
+
+article {
+    border-right: 15px solid $secondaryColor;
+    box-shadow: 15px 15px 0 $accentColor;
+    
+    
+    p.blog-date {
+        color: $primaryColor;
+    }
+}
+
+
+// comments
+.blog-comments {
+    
+    p.comment-date {
+        color: $secondaryColor;
+        font-weight: bold;
+    }
+    
+    h3 {
+        letter-spacing: 4.3px;
+        color: $tertiaryColor;
+    }
+}
+
+.blog-comment {
+    display: flex;
+}
+
+.comment-form {
+    // @include formStyles($primaryColor, $primaryTextColor);
+
+    input[id="name"],
+    input[id="email"],
+    textarea {
+        @include formStyles($primaryColor, $primaryTextColor);
+    }
+}
