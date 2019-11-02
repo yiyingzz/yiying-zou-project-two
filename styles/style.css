@@ -515,11 +515,15 @@ nav li a:hover, nav li a:focus {
   letter-spacing: 2.5px;
 }
 
-.features-section h3 {
+.discover-section {
+  padding: 0;
+}
+
+.discover-section h3 {
   color: #fff;
 }
 
-.features-section button {
+.discover-section button {
   background: #CCEDFB;
   color: #1E1713;
   font-family: "Pacifico", cursive;
@@ -530,7 +534,7 @@ nav li a:hover, nav li a:focus {
   transition: 0.3s all;
 }
 
-.features-section button:hover, .features-section button:focus {
+.discover-section button:hover, .discover-section button:focus {
   background: #1E1713;
   color: #CCEDFB;
 }
@@ -543,7 +547,9 @@ nav li a:hover, nav li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px dashed lime;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .discover-container .discover-box,
@@ -551,7 +557,6 @@ nav li a:hover, nav li a:focus {
 .locations-container .discover-box,
 .locations-container .locations-box {
   max-width: calc(50% - 80px);
-  border: 1px solid deeppink;
 }
 
 .discover-container .discover-img-container img,
@@ -559,6 +564,31 @@ nav li a:hover, nav li a:focus {
 .locations-container .discover-img-container img,
 .locations-container .locations-img-container img {
   width: 100%;
+}
+
+.discover-container .discover-text,
+.locations-container .discover-text {
+  padding-right: 7.5vw;
+}
+
+.discover-container .locations-text,
+.locations-container .locations-text {
+  padding-left: 7.5vw;
+}
+
+.discover-container .locations-img-container,
+.locations-container .locations-img-container {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  bottom: -40px;
+}
+
+.discover-container .discover-img-container,
+.locations-container .discover-img-container {
+  position: relative;
+  top: -40px;
 }
 
 .connect-section {

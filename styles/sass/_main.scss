@@ -51,7 +51,9 @@
     }
 }
 
-.features-section {
+.discover-section {
+    padding: 0;
+
     h3 {
         color: $secondaryTextColor;
     }
@@ -65,22 +67,37 @@
 .locations-container {
     display: flex;
     justify-content: space-between;
-
-    border: 2px dashed lime;
+    align-items: center;
 
     .discover-box,
     .locations-box {
         max-width: calc(50% - 80px);
-        border: 1px solid deeppink;
     }
-
+    
     .discover-img-container img,
     .locations-img-container img {
         width: 100%;
     }
+
+    .discover-text {
+        padding-right: 7.5vw;
+    }
+    
+    .locations-text {
+        padding-left: 7.5vw;
+    }
+
+    .locations-img-container {
+        order: 1;
+        position: relative;
+        bottom: -40px;
+    }
+
+    .discover-img-container {
+        position: relative;
+        top: -40px;
+    }
 }
-
-
 
 .connect-section {
     display: flex;
