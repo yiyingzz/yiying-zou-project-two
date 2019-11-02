@@ -1,44 +1,20 @@
-.techniques {
+.about-section {
     padding-top: 150px;
     display: flex;
-}
+    justify-content: space-between;
 
-.events-section {
-    display: flex;
-    flex-wrap: wrap;
-
-    .event-container {
-        width: 50%;
+    div {
+        padding: 50px 0;
     }
 
-    i {
-        font-size: 1.5rem;
-        color: $secondaryTextColor;
-        position: relative;
-
-        border: 1px dashed deeppink;
-    }
-
-    // Use transform -50% trick??/
-    //  or separate div
-    i::after {
-        content: '';
-        background: $accentColor;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        top: -15px;
-        left: -15px;
-        z-index: -1;
-
+    div.about-text-container {
+        width: calc(70% - 40px);
     }
 }
 
 
 .gallery,
-.discover {
+.discover-section {
     background: $secondaryColor;
     color: $secondaryTextColor;
     
@@ -60,10 +36,39 @@
     order: 1;
 }
 
-.events {
+// EVENTS SECTION
+
+.events-section {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 40%;
+
+    .event-container {
+        width: 50%;
+    }
+
+    i {
+        font-size: 1.5rem;
+        color: $secondaryTextColor;
+        position: relative;
+
+        border: 1px dashed deeppink;
+    }
+
+    // Use transform -50% trick??/
+    //  or separate div
+    i::after {
+        content: '';
+        // background: $accentColor;
+        // width: 60px;
+        // height: 60px;
+        // border-radius: 50%;
+        // display: block;
+        // position: absolute;
+        // top: -15px;
+        // left: -15px;
+        // z-index: -1;
+
+    }
 }
 
 
@@ -71,7 +76,7 @@
     width: 100%;
 }
 
-.search {
+.search-section {
     text-align: center;
 
     a {
@@ -84,7 +89,13 @@
 
 // Blog styles
 
-main {
+// comments
+.blog-comments h4 {
+    letter-spacing: 4.3px;
+    color: $tertiaryColor;
+}
+
+.blog {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -92,6 +103,12 @@ main {
 
 .blog-section {
     width: 65%;
+    
+    img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
 }
 
 aside {
@@ -111,11 +128,6 @@ article {
     border-right: 15px solid $secondaryColor;
     box-shadow: 15px 15px 0 $accentColor;
 
-    img {
-        width: 100%;
-        position: relative;
-        top: -100px;
-    }
 
     p.blog-date {
         color: $primaryColor;

@@ -28,17 +28,19 @@ body {
     background: $primaryColor;
 }
 
+// .outer-wrapper {
+//     max-width: 1600px;
+//     width: 100%;
+//     margin: 0 auto;
+// }
+
 .wrapper {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
     
-    border-left: 1px solid lime;
-    border-right: 1px solid lime;
-}
-
-section {
-    // padding: 100px 0;
+    border-left: 1px solid deepskyblue;
+    border-right: 1px solid deepskyblue;
 }
 
 .logo {
@@ -56,9 +58,12 @@ h3,
 h4 {
     font-family: $secondaryFont;
     color: $secondaryColor;
+    margin: 0;
 }
 
-
+section {
+    padding: 60px 0;
+}
 
 
 // SHOULD FONt-SIZE BE in REM? OF COURSE THEY SHOULD
@@ -100,13 +105,6 @@ h6 {
 }
 
 
-
-// comments
-.blog-comments h4 {
-    letter-spacing: 4.3px;
-    color: $tertiaryColor;
-}
-
 // Our missions, recent posts (aside)
 h5 {
     font-size: 35px;
@@ -114,15 +112,17 @@ h5 {
 }
 
 a {
-    display: block;
-    font-family: $secondaryFont;
-    color: $secondaryTextColor;
-    text-transform: lowercase;
-    text-align: center;
     font-size: 1.35rem;
     line-height: 32px;
     letter-spacing: 1.4px;
     text-decoration: none;
+}
+
+button {
+    font-family: $secondaryFont;
+    color: $secondaryTextColor;
+    text-transform: lowercase;
+    text-align: center;
     width: 240px;
     padding: 10px;
     background: $secondaryColor;
