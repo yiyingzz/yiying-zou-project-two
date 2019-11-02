@@ -254,6 +254,12 @@ body {
   background: #CCEDFB;
 }
 
+.outer-wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 85%;
@@ -573,16 +579,23 @@ nav li a:hover, nav li a:focus {
 
 .connect-section .connect-container {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.connect-section i {
+.connect-section .connect-container .connect-icon {
+  min-width: 60px;
+}
+
+.connect-icon i {
   font-size: 1.5rem;
   color: #fff;
   position: relative;
   border: 1px dashed deeppink;
 }
 
-.connect-section i::after {
+.connect-icon i::after {
   content: '';
   background: #0CADC0;
   width: 60px;
