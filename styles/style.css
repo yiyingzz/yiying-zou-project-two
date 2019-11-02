@@ -235,22 +235,10 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: 1px dashed lime;
-}
-
 body,
 ul {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
 }
 
 html {
@@ -296,6 +284,7 @@ h4 {
 
 h1 {
   color: #1A315C;
+  margin-top: 70px;
 }
 
 h1 {
@@ -402,6 +391,15 @@ form textarea {
           justify-content: space-between;
 }
 
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
 nav a {
   font-weight: bold;
   line-height: 29px;
@@ -430,7 +428,6 @@ nav a:hover, nav a:focus {
 }
 
 .header-home h1 {
-  margin-top: 70px;
   width: 650px;
 }
 
@@ -610,57 +607,63 @@ nav a:hover, nav a:focus {
   margin: 0;
 }
 
-.blog {
+.blog-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.blog-section {
-  width: 65%;
+.blog-container .blog-section {
+  width: 60%;
 }
 
-.blog-section img {
-  width: 100%;
+.blog-container .blog-aside {
+  width: 25%;
+}
+
+.blog-article {
+  border-right: 10px solid #0CADC0;
+}
+
+.blog-article p.blog-date {
+  color: #CCEDFB;
+}
+
+.blog-article img {
   position: relative;
   top: -100px;
 }
 
-.blog-aside {
-  width: 25%;
+.blog-article .blog-text-container {
+  padding-left: 7.5vw;
 }
 
-article,
-.aside-content {
+.blog-article .blog-text-container h2 {
+  font-size: 2rem;
+  letter-spacing: 4.3px;
+}
+
+.blog-article,
+.blog-aside-container {
   background: #1A315C;
-}
-
-article p,
-.aside-content p {
   color: #fff;
 }
 
-article {
-  border-right: 15px solid #1A315C;
-  -webkit-box-shadow: 15px 15px 0 #0CADC0;
-          box-shadow: 15px 15px 0 #0CADC0;
+.blog-article img,
+.blog-aside-container img {
+  width: 100%;
 }
 
-article p.blog-date {
-  color: #CCEDFB;
-}
-
-.blog-comments p.comment-date {
+.comments-section p.comment-date {
   color: #1A315C;
   font-weight: bold;
 }
 
-.blog-comments h3 {
+.comments-section h3 {
+  font-size: 2rem;
   letter-spacing: 4.3px;
   color: #161515;
 }
@@ -671,11 +674,24 @@ article p.blog-date {
   display: flex;
 }
 
+.comment-form {
+  background: #CCEDFB;
+  color: #1E1713;
+}
+
 .comment-form input[id="name"],
 .comment-form input[id="email"],
 .comment-form textarea {
   background: #CCEDFB;
   color: #1E1713;
+}
+
+.comment-form button {
+  background: #1A315C;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 footer {

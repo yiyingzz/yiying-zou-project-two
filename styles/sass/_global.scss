@@ -1,5 +1,5 @@
 // GLOBAL STYLES 
-* { border: 1px dashed lime; }
+// * { border: 1px dashed lime; }
 
 body,
 ul {
@@ -8,13 +8,13 @@ ul {
 }
 
 // maybe strip these on nav only
-ul {
-    list-style: none;
-}
+// ul {
+//     list-style: none;
+// }
 
-li {
-    display: inline-block;
-}
+// li {
+//     display: inline-block;
+// }
 
 html {
     font-size: 125%;
@@ -67,6 +67,7 @@ h4 {
 
 h1 {
     color: $secondaryColor;
+    margin-top: 70px;
 }
 
 // SHOULD FONt-SIZE BE in REM? OF COURSE THEY SHOULD

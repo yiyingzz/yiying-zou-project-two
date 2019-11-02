@@ -1,55 +1,69 @@
-// Blog styles
+// BLOG STYLES
 
-
-.blog {
+.blog-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
 
-.blog-section {
-    width: 65%;
+    .blog-section {
+        width: 60%;
+    }
     
-    img {
-        width: 100%;
-        position: relative;
-        top: -100px;
+    .blog-aside {
+        width: 25%;
     }
 }
 
-.blog-aside {
-    width: 25%;
-}
 
-article,
-.aside-content {
-    background: $secondaryColor;
-    
-    p {
-        color: $secondaryTextColor;
-    }
-}
+//
 
-article {
-    border-right: 15px solid $secondaryColor;
-    box-shadow: 15px 15px 0 $accentColor;
-    
+.blog-article {
+    border-right: 10px solid $accentColor;
     
     p.blog-date {
         color: $primaryColor;
     }
+
+    img {
+        position: relative;
+        top: -100px;
+    }
+
+    .blog-text-container {
+        padding-left: 7.5vw;
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 4.3px;
+        }
+    }
 }
 
 
+.blog-article,
+.blog-aside-container {
+    background: $secondaryColor;
+    color: $secondaryTextColor;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+// BLOG SIDEBAR 
+
+
+
 // comments
-.blog-comments {
-    
+.comments-section {
+
     p.comment-date {
         color: $secondaryColor;
         font-weight: bold;
     }
     
     h3 {
+        font-size: 2rem;
         letter-spacing: 4.3px;
         color: $tertiaryColor;
     }
@@ -59,12 +73,17 @@ article {
     display: flex;
 }
 
+
 .comment-form {
-    // @include formStyles($primaryColor, $primaryTextColor);
+    @include formStyles($primaryColor, $primaryTextColor);
 
     input[id="name"],
     input[id="email"],
     textarea {
         @include formStyles($primaryColor, $primaryTextColor);
+    }
+
+    button {
+        @include buttonStyles($secondaryColor,$secondaryTextColor);
     }
 }
