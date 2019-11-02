@@ -1,7 +1,22 @@
+.techniques-section,
+.connect-section {
+    h2 {
+        color: $secondaryColor;
+        font-size: 2.15rem;
+        line-height: 2.9rem;
+        letter-spacing: 2.7px;
+    }
+}
+
 .techniques-section {
     padding-top: 150px;
     display: flex;
     justify-content: space-between;
+    border: 1px dashed lime;
+
+    h2 {
+        margin-top: 10px;
+    }
 
     div {
         padding: 50px 0;
@@ -16,15 +31,6 @@
     }
 }
 
-.about-section,
-.connect-section {
-    h2 {
-        color: $secondaryColor;
-        font-size: 2.15rem;
-        line-height: 2.9rem;
-        letter-spacing: 2.7px;
-    }
-}
 
 .gallery,
 .discover-section {
@@ -60,6 +66,7 @@
     
     button {
         @include buttonStyles($primaryColor, $primaryTextColor);
+        margin-top: 20px;
     }
 }
 
@@ -146,21 +153,21 @@
 
     button {
         @include buttonStyles($secondaryColor, $secondaryTextColor);
+        margin-top: 20px;
     }
 }
 
-
 // Contact page
 
-.contact-container {
+.contact-section {
     display: flex;
+    padding: 0;
 }
 
 .contact-form {
     position: relative;
-    bottom: 100px;
+    top: -110px;
     width: 70%;
-    
     @include formStyles($secondaryColor, $secondaryTextColor);
     
     input[id="name"],
@@ -170,14 +177,28 @@
     }
 
     button {
-        @include buttonStyles($primaryColor, $secondaryColor);
+        @include buttonStyles($primaryColor, $primaryTextColor);
     }
 }
 
 .contact-info {
-    padding: 50px 0 100px 60px;
+    padding: 100px 0 0 100px;
 
     p:not(:first-of-type) {
         margin: 0;
+    }
+}
+
+.contact-social-icons {
+    a {
+        font-size: 1.2rem;
+        display: inline-block;
+        margin-right: 10px;
+        transition: 0.3s all;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
     }
 }

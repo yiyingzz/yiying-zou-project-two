@@ -13,8 +13,6 @@ $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
 // Mixins
-// Are good for when many properties have the same value, but only 1 or 2 are different, so we put them through as arguments.
-// Since it's formStyles (not structure like display: flex;, just put padding, colours, etc here? basically if we strip styles, it should just look like default form?
 
 @mixin formStyles($formColor, $formTextColor) {
     background: $formColor;

@@ -279,53 +279,18 @@ h1 {
   margin-top: 70px;
 }
 
-h1 {
-  font-size: 58px;
-  line-height: 68px;
-  width: 50%;
-}
-
-h2 {
-  font-size: 68px;
-  line-height: 64px;
-}
-
-h3 {
-  font-size: 43px;
-  line-height: 58px;
-  letter-spacing: 2.7px;
-}
-
-h4 {
-  font-size: 2rem;
-  line-height: 58px;
-  letter-spacing: 2.5px;
-}
-
-h5 {
-  border: 1px dashed deeppink;
-}
-
-h6 {
-  border: 1px dashed deepskyblue;
-  color: #fff;
-}
-
 h5 {
   font-size: 35px;
   letter-spacing: 2.9px;
 }
 
 a {
-  font-size: 1.35rem;
-  line-height: 32px;
-  letter-spacing: 1.4px;
   text-decoration: none;
+  color: #1A315C;
 }
 
 button {
-  width: 240px;
-  padding: 10px;
+  padding: 10px 40px;
 }
 
 .right-shadow {
@@ -401,6 +366,7 @@ nav li {
 
 nav li a {
   font-weight: bold;
+  font-size: 1rem;
   line-height: 29px;
   letter-spacing: 1.4px;
   text-align: center;
@@ -446,6 +412,14 @@ nav li a:hover, nav li a:focus {
   height: 60vh;
 }
 
+.techniques-section h2,
+.connect-section h2 {
+  color: #1A315C;
+  font-size: 2.15rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.7px;
+}
+
 .techniques-section {
   padding-top: 150px;
   display: -webkit-box;
@@ -454,6 +428,11 @@ nav li a:hover, nav li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 1px dashed lime;
+}
+
+.techniques-section h2 {
+  margin-top: 10px;
 }
 
 .techniques-section div {
@@ -478,14 +457,6 @@ nav li a:hover, nav li a:focus {
 .techniques-section button:hover, .techniques-section button:focus {
   background: #fff;
   color: #1A315C;
-}
-
-.about-section h2,
-.connect-section h2 {
-  color: #1A315C;
-  font-size: 2.15rem;
-  line-height: 2.9rem;
-  letter-spacing: 2.7px;
 }
 
 .gallery,
@@ -532,6 +503,7 @@ nav li a:hover, nav li a:focus {
   border: 2px solid #CCEDFB;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  margin-top: 20px;
 }
 
 .discover-section button:hover, .discover-section button:focus {
@@ -644,6 +616,7 @@ nav li a:hover, nav li a:focus {
   border: 2px solid #1A315C;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  margin-top: 20px;
 }
 
 .search-section button:hover, .search-section button:focus {
@@ -651,15 +624,16 @@ nav li a:hover, nav li a:focus {
   color: #1A315C;
 }
 
-.contact-container {
+.contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .contact-form {
   position: relative;
-  bottom: 100px;
+  top: -110px;
   width: 70%;
   background: #1A315C;
   color: #fff;
@@ -674,7 +648,7 @@ nav li a:hover, nav li a:focus {
 
 .contact-form button {
   background: #CCEDFB;
-  color: #1A315C;
+  color: #1E1713;
   font-family: "Pacifico", cursive;
   text-transform: lowercase;
   text-align: center;
@@ -684,16 +658,28 @@ nav li a:hover, nav li a:focus {
 }
 
 .contact-form button:hover, .contact-form button:focus {
-  background: #1A315C;
+  background: #1E1713;
   color: #CCEDFB;
 }
 
 .contact-info {
-  padding: 50px 0 100px 60px;
+  padding: 100px 0 0 100px;
 }
 
 .contact-info p:not(:first-of-type) {
   margin: 0;
+}
+
+.contact-social-icons a {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-social-icons a:hover, .contact-social-icons a:focus {
+  color: #0CADC0;
 }
 
 .blog-container {
@@ -802,5 +788,6 @@ footer {
 
 footer p {
   margin: 0;
+  padding: 10px;
   text-align: center;
 }

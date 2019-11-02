@@ -87,6 +87,6 @@
     }
 
     button {
-        @include buttonStyles($secondaryColor,$secondaryTextColor);
+        @include buttonStyles($secondaryColor, $secondaryTextColor);
     }
 }
