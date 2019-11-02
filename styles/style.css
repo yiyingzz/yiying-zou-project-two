@@ -262,14 +262,6 @@ body {
   border-right: 1px solid deepskyblue;
 }
 
-.logo {
-  font-family: "Pacifico", cursive;
-  color: #1E1713;
-  font-size: 1.5rem;
-  line-height: 24px;
-  letter-spacing: 1.7px;
-}
-
 section {
   padding: 60px 0;
 }
@@ -337,8 +329,8 @@ button {
 }
 
 .right-shadow {
-  -webkit-box-shadow: 20px 20px 0px 0px #0CADC0;
-          box-shadow: 20px 20px 0px 0px #0CADC0;
+  -webkit-box-shadow: 20px 20px 0px #0CADC0;
+          box-shadow: 20px 20px 0px #0CADC0;
 }
 
 .left-shadow {
@@ -389,33 +381,37 @@ form textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 30px;
 }
 
-nav ul {
-  padding: 0;
+.logo {
+  font-family: "Pacifico", cursive;
+  color: #1E1713;
+  font-size: 1.5rem;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+  margin-top: 0;
 }
 
-nav ul li {
+nav li {
   list-style: none;
   display: inline-block;
+  margin-left: 40px;
 }
 
-nav a {
+nav li a {
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1.4px;
   text-align: center;
   text-transform: uppercase;
-  padding: 5px 0;
-  margin: 20px 0px 20px 40px;
   font-family: "Lato", sans-serif;
   color: #1A315C;
-  width: initial;
-  height: initial;
-  background: initial;
+  display: block;
+  padding-bottom: 5px;
 }
 
-nav a:hover, nav a:focus {
+nav li a:hover, nav li a:focus {
   border-bottom: 2px solid #0CADC0;
 }
 
@@ -450,7 +446,7 @@ nav a:hover, nav a:focus {
   height: 60vh;
 }
 
-.about-section {
+.techniques-section {
   padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,20 +456,28 @@ nav a:hover, nav a:focus {
           justify-content: space-between;
 }
 
-.about-section div {
+.techniques-section div {
   padding: 50px 0;
 }
 
-.about-section div.about-text-container {
+.techniques-section div.techniques-text-container {
   width: calc(70% - 40px);
 }
 
-.about-section button {
+.techniques-section button {
   background: #1A315C;
   color: #fff;
   font-family: "Pacifico", cursive;
   text-transform: lowercase;
   text-align: center;
+  border: 2px solid #1A315C;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.techniques-section button:hover, .techniques-section button:focus {
+  background: #fff;
+  color: #1A315C;
 }
 
 .about-section h2,
@@ -490,8 +494,18 @@ nav a:hover, nav a:focus {
   color: #fff;
 }
 
-.gallery img {
-  width: calc(30%);
+.gallery-container {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-container img {
+  width: calc(100%/3 - 25px);
 }
 
 .discover-section h3,
@@ -501,16 +515,24 @@ nav a:hover, nav a:focus {
   letter-spacing: 2.5px;
 }
 
-.discover-section h3 {
+.features-section h3 {
   color: #fff;
 }
 
-.discover-section button {
+.features-section button {
   background: #CCEDFB;
   color: #1E1713;
   font-family: "Pacifico", cursive;
   text-transform: lowercase;
   text-align: center;
+  border: 2px solid #CCEDFB;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.features-section button:hover, .features-section button:focus {
+  background: #1E1713;
+  color: #CCEDFB;
 }
 
 .discover-container,
@@ -518,12 +540,25 @@ nav a:hover, nav a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px dashed lime;
 }
 
-.locations-container img {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+.discover-container .discover-box,
+.discover-container .locations-box,
+.locations-container .discover-box,
+.locations-container .locations-box {
+  max-width: calc(50% - 80px);
+  border: 1px solid deeppink;
+}
+
+.discover-container .discover-img-container img,
+.discover-container .locations-img-container img,
+.locations-container .discover-img-container img,
+.locations-container .locations-img-container img {
+  width: 100%;
 }
 
 .connect-section {
@@ -576,6 +611,14 @@ nav a:hover, nav a:focus {
   font-family: "Pacifico", cursive;
   text-transform: lowercase;
   text-align: center;
+  border: 2px solid #1A315C;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.search-section button:hover, .search-section button:focus {
+  background: #fff;
+  color: #1A315C;
 }
 
 .contact-container {
@@ -597,6 +640,22 @@ nav a:hover, nav a:focus {
 .contact-form textarea {
   background: #1A315C;
   color: #fff;
+}
+
+.contact-form button {
+  background: #CCEDFB;
+  color: #1A315C;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  text-align: center;
+  border: 2px solid #CCEDFB;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-form button:hover, .contact-form button:focus {
+  background: #1A315C;
+  color: #CCEDFB;
 }
 
 .contact-info {
@@ -626,6 +685,7 @@ nav a:hover, nav a:focus {
 
 .blog-article {
   border-right: 10px solid #0CADC0;
+  border-bottom: 10px solid #0CADC0;
 }
 
 .blog-article p.blog-date {
@@ -633,8 +693,11 @@ nav a:hover, nav a:focus {
 }
 
 .blog-article img {
+  -webkit-box-shadow: 30px 30px 0px #0CADC0;
+          box-shadow: 30px 30px 0px #0CADC0;
   position: relative;
-  top: -100px;
+  top: -150px;
+  left: -10px;
 }
 
 .blog-article .blog-text-container {
@@ -692,6 +755,14 @@ nav a:hover, nav a:focus {
   font-family: "Pacifico", cursive;
   text-transform: lowercase;
   text-align: center;
+  border: 2px solid #1A315C;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.comment-form button:hover, .comment-form button:focus {
+  background: #fff;
+  color: #1A315C;
 }
 
 footer {

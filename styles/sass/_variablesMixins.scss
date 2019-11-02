@@ -27,4 +27,12 @@ $bodyFontSize: 1rem;
     font-family: $secondaryFont;
     text-transform: lowercase;
     text-align: center;
+    border: 2px solid $bgColor;
+    transition: 0.3s all;
+
+    &:hover,
+    &:focus {
+        background: $textColor;
+        color: $bgColor;
+    }
 }

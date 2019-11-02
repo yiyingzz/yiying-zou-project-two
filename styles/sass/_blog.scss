@@ -18,14 +18,17 @@
 
 .blog-article {
     border-right: 10px solid $accentColor;
+    border-bottom: 10px solid $accentColor;
     
     p.blog-date {
         color: $primaryColor;
     }
 
     img {
+        box-shadow: 30px 30px 0px $accentColor;
         position: relative;
-        top: -100px;
+        top: -150px;
+        left: -10px;
     }
 
     .blog-text-container {

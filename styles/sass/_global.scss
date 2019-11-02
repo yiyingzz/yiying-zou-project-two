@@ -7,15 +7,6 @@ ul {
     padding: 0;
 }
 
-// maybe strip these on nav only
-// ul {
-//     list-style: none;
-// }
-
-// li {
-//     display: inline-block;
-// }
-
 html {
     font-size: 125%;
 }
@@ -44,13 +35,7 @@ body {
     border-right: 1px solid deepskyblue;
 }
 
-.logo {
-    font-family: $secondaryFont;
-    color: $primaryTextColor;
-    font-size: 1.5rem;
-    line-height: 24px;
-    letter-spacing: 1.7px;
-}
+
 
 section {
     padding: 60px 0;
@@ -130,7 +115,7 @@ button {
 // Image styles
 
 .right-shadow {
-    box-shadow: 20px 20px 0px 0px $accentColor;
+    box-shadow: 20px 20px 0px $accentColor;
 }
 
 .left-shadow {
