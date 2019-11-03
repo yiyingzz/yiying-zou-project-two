@@ -87,11 +87,11 @@
     }
 
     .discover-text {
-        padding-right: 7.5vw;
+        padding-right: 7.25vw;
     }
     
     .locations-text {
-        padding-left: 7.5vw;
+        padding-left: 7.25vw;
     }
 
     .locations-img-container {
@@ -116,33 +116,50 @@
 
         .connect-icon {
             min-width: 60px;
+            position: relative;
+            top: 12px;
+            margin-right: 15px;
+
+            &::after {
+                content: '';
+                background: $accentColor;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                top: -15px;
+                z-index: -1;
+            }
         }
     }
 }
 
 .connect-icon i {
-        font-size: 1.5rem;
-        color: $secondaryTextColor;
-        position: relative;
-
-        border: 1px dashed deeppink;
-
-    // Use transform -50% trick??/
-    //  or separate div
-    &::after {
-        content: '';
-        background: $accentColor;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        top: -15px;
-        left: -15px;
-        z-index: -1;
-
-    }
+    font-size: 1.5rem;
+    color: $secondaryTextColor;
+    position: relative;
+    margin-left: 12px;
 }
+
+// Centering icons
+.fa-calendar-check {
+    left: 4px;
+}
+
+.fa-users {
+    left: -1px;
+}
+
+.fa-file {
+    left: 6px;
+}
+
+.fa-phone {
+    left: 3px;
+}
+
+// DECORATIVE BANNER
 
 .banner-container img {
     width: 100%;

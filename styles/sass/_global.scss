@@ -27,7 +27,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: calc(1600px * 0.85);
     width: 85%;
     margin: 0 auto;
     
@@ -52,14 +52,9 @@ h4 {
 
 h1 {
     color: $secondaryColor;
-    margin-top: 70px;
-}
-
-
-// Our missions, recent posts (aside)
-h5 {
-    font-size: 35px;
-    letter-spacing: 2.9px;
+    margin-top: 50px;
+    font-size: 3.4rem;
+    line-height: 3.2rem;
 }
 
 a {
@@ -106,7 +101,6 @@ form {
     input[id="email"],
     textarea {
         padding: 20px;
-        // margin: 30px 0;
     }
 
     textarea {

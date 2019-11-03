@@ -261,7 +261,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: calc(1600px * 0.85);
   width: 85%;
   margin: 0 auto;
   border-left: 1px solid deepskyblue;
@@ -282,12 +282,9 @@ h4 {
 
 h1 {
   color: #1A315C;
-  margin-top: 70px;
-}
-
-h5 {
-  font-size: 35px;
-  letter-spacing: 2.9px;
+  margin-top: 50px;
+  font-size: 3.4rem;
+  line-height: 3.2rem;
 }
 
 a {
@@ -396,6 +393,8 @@ nav li a:hover, nav li a:focus {
 }
 
 .header-home h1 {
+  font-size: 2.9rem;
+  line-height: 3.4rem;
   width: 650px;
 }
 
@@ -546,12 +545,12 @@ nav li a:hover, nav li a:focus {
 
 .discover-container .discover-text,
 .locations-container .discover-text {
-  padding-right: 7.5vw;
+  padding-right: 7.25vw;
 }
 
 .discover-container .locations-text,
 .locations-container .locations-text {
-  padding-left: 7.5vw;
+  padding-left: 7.25vw;
 }
 
 .discover-container .locations-img-container,
@@ -586,16 +585,12 @@ nav li a:hover, nav li a:focus {
 
 .connect-section .connect-container .connect-icon {
   min-width: 60px;
-}
-
-.connect-icon i {
-  font-size: 1.5rem;
-  color: #fff;
   position: relative;
-  border: 1px dashed deeppink;
+  top: 12px;
+  margin-right: 15px;
 }
 
-.connect-icon i::after {
+.connect-section .connect-container .connect-icon::after {
   content: '';
   background: #0CADC0;
   width: 60px;
@@ -604,8 +599,30 @@ nav li a:hover, nav li a:focus {
   display: block;
   position: absolute;
   top: -15px;
-  left: -15px;
   z-index: -1;
+}
+
+.connect-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+  position: relative;
+  margin-left: 12px;
+}
+
+.fa-calendar-check {
+  left: 4px;
+}
+
+.fa-users {
+  left: -1px;
+}
+
+.fa-file {
+  left: 6px;
+}
+
+.fa-phone {
+  left: 3px;
 }
 
 .banner-container img {
