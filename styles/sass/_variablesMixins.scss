@@ -13,6 +13,7 @@ $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
 // Mixins
+
 @mixin formStyles($formColor, $formTextColor) {
     background: $formColor;
     color: $formTextColor;
@@ -42,5 +43,18 @@ $bodyFontSize: 1rem;
         background: $accentColor;
         color: $secondaryTextColor;
         border: 2px solid $secondaryTextColor;
+    }
+}
+
+// Mixin to align some content on blog & index page on bigger screens
+@mixin wideScreenPaddingLeft {
+    @media (min-width: 1600px) {
+        padding-left: calc(1600px * 0.075);
+    }
+}
+
+@mixin wideScreenPaddingRight {
+    @media (min-width: 1600px) {
+        padding-right: calc(1600px * 0.075);
     }
 }

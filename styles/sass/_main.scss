@@ -79,7 +79,6 @@
     .discover-box,
     .locations-box {
         width: calc(50% - 80px);
-        border: 1px dashed deeppink;
     }
     
     .discover-img-container img,
@@ -88,11 +87,13 @@
     }
 
     .discover-text {
-        padding-right: 7.25vw;
+        padding-right: 7.5vw;
+        @include wideScreenPaddingRight;
     }
     
     .locations-text {
-        padding-left: 7.25vw;
+        padding-left: 7.5vw;
+        @include wideScreenPaddingLeft;
     }
 
     .locations-img-container {
@@ -113,7 +114,7 @@
     justify-content: space-between;
 
     .connect-container {
-        width: calc(50% - 15px);
+        width: calc(50% - 8px);
         display: flex;
     }
 }
@@ -172,6 +173,7 @@
 
 .search-section {
     text-align: center;
+    padding: 90px 0 120px;
 
     h3 {
         color: $secondaryColor;

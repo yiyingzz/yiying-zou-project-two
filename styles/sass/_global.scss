@@ -1,5 +1,5 @@
 // GLOBAL STYLES 
-// * { border: 1px dashed lime; }
+// * { border: 1px dashed deeppink; }
 
 body,
 ul {
@@ -15,26 +15,21 @@ body {
     font-family: $primaryFont;
     font-size: $bodyFontSize;
     color: $primaryTextColor;
-    line-height: 28px;
+    line-height: 1.4rem;
     letter-spacing: 2px;
     background: $primaryColor;
 }
 
 .outer-wrapper {
-    // EHHHHHHH............
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
 
 .wrapper {
-    // NEED TO FIGURE THIS ONE OUT
     max-width: calc(1600px * 0.85);
     width: 85%;
     margin: 0 auto;
-    
-    border-left: 1px solid deeppink;
-    border-right: 1px solid deeppink;
 }
 
 section {
@@ -92,6 +87,8 @@ form {
     input[id="email"] {
         width: calc(50% - 20px);
         border: 0;
+
+        // SHOULD THIS GO IN MIXIN ??????????????????
         border-bottom: 2px solid $accentColor;
     }
 
@@ -107,6 +104,8 @@ form {
     }
 
     textarea {
+
+        // SHOULD THIS GO IN MIXIN ??????????????????
         border: 2px solid $accentColor;
         margin: 30px 0;
         resize: none;

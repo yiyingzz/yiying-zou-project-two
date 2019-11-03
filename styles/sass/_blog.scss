@@ -6,12 +6,18 @@
 
     .blog-section {
         width: 65%;
-        border: 3px dashed orange;
     }
     
     .blog-aside {
         width: 25%;
     }
+}
+
+.blog-text-container,
+.comments-section,
+.comment-form-section {
+    padding: 0 50px 0 7.5vw;
+    @include wideScreenPaddingLeft;
 }
 
 .blog-article,
@@ -37,7 +43,7 @@
     
     .blog-text-container {
         margin-top: -100px;
-        padding: 0 50px 50px 7.75vw;
+        padding-bottom: 60px;
         
         .blog-date {
             color: $primaryColor;
@@ -65,7 +71,7 @@
     margin-bottom: 30px;
 
     h4 {
-        font-size: 1.725rem;
+        font-size: 1.75rem;
         letter-spacing: 2.9px;
     }
 
@@ -88,7 +94,7 @@
 
 // comments
 .comments-section {
-    padding: 50px 50px 0px 7.75vw;
+    margin-top: 50px;
 
     p.comment-date {
         color: $secondaryColor;
@@ -120,10 +126,6 @@
             margin-top: 5px;
         }
     }
-}
-
-.comment-form-section {
-    padding: 0 0 0 7.75vw;
 }
 
 .comment-form {
