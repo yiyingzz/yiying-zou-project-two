@@ -59,16 +59,19 @@
     bottom: -150px;
 }
 
+.header-blog,
+.header-contact {
+    background-size: cover;
+    background-position: right;
+    height: 60vh;
+}
+
 .header-blog {
     background-image: url(../assets/blog-header.jpg);
-    background-size: cover;
-    height: 60vh;
 }
 
 .header-contact {
     background-image: url(../assets/contact-header.jpg);
-    background-size: cover;
-    height: 60vh;
 }
 
 
