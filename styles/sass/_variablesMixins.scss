@@ -30,7 +30,8 @@ $bodyFontSize: 1rem;
 
     &:hover,
     &:focus {
-        background: $textColor;
-        color: $bgColor;
+        background: $accentColor;
+        color: $secondaryTextColor;
+        border: 2px solid $secondaryTextColor;
     }
 }

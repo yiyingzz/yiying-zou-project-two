@@ -5,7 +5,7 @@
     justify-content: space-between;
 
     .blog-section {
-        width: 60%;
+        width: 65%;
     }
     
     .blog-aside {
@@ -13,34 +13,42 @@
     }
 }
 
-
-//
+.blog-article,
+.blog-aside-container {
+    background: $secondaryColor;
+    color: $secondaryTextColor;
+}
 
 .blog-article {
     border-right: 10px solid $accentColor;
     border-bottom: 10px solid $accentColor;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 510px;
+        background: $accentColor;
+        position: absolute;
+        top: -150px;
+        left: 40px;
+        right: -10px;
+        z-index: 1;
     
+    }
+
     .blog-img-container {
         position: relative;
-        top: -150px;
-        z-index: 1;
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 350px;
-            background: $accentColor;
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            z-index: -1;
-        }
+        left: -20px;
+        top: -180px;
+        z-index: 2;        
+        
     }
 }
 
 .blog-text-container {
-    padding: 0 30px 30px 7.5vw;
+    margin-top: -100px;
+    padding: 0 50px 50px 7.75vw;
     
     .blog-date {
         color: $primaryColor;
@@ -52,19 +60,12 @@
     }
 }
 
-
-.blog-article,
-.blog-aside-container {
-    background: $secondaryColor;
-    color: $secondaryTextColor;
-
-    img {
-        width: 100%;
-    }
-}
+// Aside styles
 
 .blog-aside-container {
     margin-top: 100px;
+    padding-top: 300px;
+    position: relative;
 
     .blog-aside-text {
         padding: 30px 40px;
@@ -72,20 +73,19 @@
     }
 }
 
-.blog-aside-container img {
-    &::after {
-        content: '';
-        display: block;
-        width: 300px;
-        height: 300px;
-        background: $accentColor;
-        z-index: 10;
-    }
-}
+.aside-img-container {
+    width: calc(100% - 30px);
 
+    // THIS MADE THE ASIDE FLOAT UP
+    position: absolute;
+    right: 0;
+    top: -30px;
+
+}
 
 // comments
 .comments-section {
+    padding: 50px 50px 0px 7.75vw;
 
     p.comment-date {
         color: $secondaryColor;
@@ -101,8 +101,27 @@
 
 .blog-comment {
     display: flex;
+    margin-top: 50px;
+
+    .commenter-img {
+        min-width: 15%;
+        margin-right: 30px;
+    }
+
+    .comment-text-container {
+        p:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
 }
 
+.comment-form-section {
+    padding: 0 0 0 7.75vw;
+}
 
 .comment-form {
     @include formStyles($primaryColor, $primaryTextColor);
