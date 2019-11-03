@@ -688,6 +688,34 @@ nav li a:hover, nav li a:focus {
   color: #fff;
 }
 
+.contact-form input[id="name"]::-webkit-input-placeholder,
+.contact-form input[id="email"]::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.contact-form input[id="name"]:-ms-input-placeholder,
+.contact-form input[id="email"]:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.contact-form input[id="name"]::-ms-input-placeholder,
+.contact-form input[id="email"]::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.contact-form input[id="name"]::placeholder,
+.contact-form input[id="email"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
 .contact-form button {
   background: #CCEDFB;
   color: #1E1713;
@@ -751,58 +779,54 @@ nav li a:hover, nav li a:focus {
 .blog-article {
   border-right: 10px solid #0CADC0;
   border-bottom: 10px solid #0CADC0;
-  position: relative;
 }
 
-.blog-article::before {
-  content: '';
-  display: block;
-  height: 510px;
-  background: #0CADC0;
-  position: absolute;
-  top: -150px;
-  left: 40px;
-  right: -10px;
-  z-index: 1;
-}
-
-.blog-article .blog-img-container {
-  position: relative;
-  left: -20px;
-  top: -180px;
+.blog-article .blog-img-container img {
+  width: calc(100% - 10px);
   z-index: 2;
+  position: relative;
+  top: -170px;
 }
 
-.blog-text-container {
+.blog-article .blog-text-container {
   margin-top: -100px;
   padding: 0 50px 50px 7.75vw;
 }
 
-.blog-text-container .blog-date {
+.blog-article .blog-text-container .blog-date {
   color: #CCEDFB;
 }
 
-.blog-text-container h2 {
+.blog-article .blog-text-container h2 {
   font-size: 2rem;
   letter-spacing: 4.3px;
 }
 
 .blog-aside-container {
-  margin-top: 100px;
-  padding-top: 300px;
+  margin-top: 120px;
+}
+
+.blog-aside-container .blog-aside-text-container {
+  padding: 0 30px 20px 20px;
+}
+
+.blog-aside-container .blog-aside-text-box p {
+  margin-top: 0;
+}
+
+.blog-aside-container .blog-aside-text-box ul {
+  padding-left: 20px;
+}
+
+.blog-aside-container .blog-aside-text-box ul p {
+  margin: 0;
+}
+
+.blog-aside-img-container {
+  width: calc(100% - 20px);
   position: relative;
-}
-
-.blog-aside-container .blog-aside-text {
-  padding: 30px 40px;
-  border: 1px dashed lime;
-}
-
-.aside-img-container {
-  width: calc(100% - 30px);
-  position: absolute;
-  right: 0;
-  top: -30px;
+  right: -20px;
+  top: -20px;
 }
 
 .comments-section {
@@ -854,6 +878,34 @@ nav li a:hover, nav li a:focus {
 .comment-form textarea {
   background: #CCEDFB;
   color: #1E1713;
+}
+
+.comment-form input[id="name"]::-webkit-input-placeholder,
+.comment-form input[id="email"]::-webkit-input-placeholder,
+.comment-form textarea::-webkit-input-placeholder {
+  color: #1A315C;
+  opacity: 0.7;
+}
+
+.comment-form input[id="name"]:-ms-input-placeholder,
+.comment-form input[id="email"]:-ms-input-placeholder,
+.comment-form textarea:-ms-input-placeholder {
+  color: #1A315C;
+  opacity: 0.7;
+}
+
+.comment-form input[id="name"]::-ms-input-placeholder,
+.comment-form input[id="email"]::-ms-input-placeholder,
+.comment-form textarea::-ms-input-placeholder {
+  color: #1A315C;
+  opacity: 0.7;
+}
+
+.comment-form input[id="name"]::placeholder,
+.comment-form input[id="email"]::placeholder,
+.comment-form textarea::placeholder {
+  color: #1A315C;
+  opacity: 0.7;
 }
 
 .comment-form button {

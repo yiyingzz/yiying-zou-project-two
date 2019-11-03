@@ -13,10 +13,19 @@ $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
 // Mixins
-
 @mixin formStyles($formColor, $formTextColor) {
     background: $formColor;
     color: $formTextColor;
+}
+
+@mixin inputStyles($inputColor, $inputTextColor, $placeholderColor) {
+    background: $inputColor;
+    color: $inputTextColor;
+
+    &::placeholder {
+        color: $placeholderColor;
+        opacity: 0.7;
+    }
 }
 
 @mixin buttonStyles($bgColor, $textColor) {

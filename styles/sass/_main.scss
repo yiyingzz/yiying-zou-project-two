@@ -199,7 +199,7 @@
     input[id="name"],
     input[id="email"],
     textarea {
-        @include formStyles($secondaryColor, $secondaryTextColor);
+        @include inputStyles($secondaryColor, $secondaryTextColor, $secondaryTextColor);
     }
 
     button {
