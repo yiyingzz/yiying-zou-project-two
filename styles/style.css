@@ -363,13 +363,13 @@ form textarea {
   margin-top: 0;
 }
 
-nav li {
+.header-nav li {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
 }
 
-nav li a {
+.header-nav li a {
   font-weight: bold;
   font-size: 1rem;
   line-height: 29px;
@@ -381,7 +381,7 @@ nav li a {
   display: block;
 }
 
-nav li a:hover, nav li a:focus {
+.header-nav li a:hover, .header-nav li a:focus {
   border-bottom: 2px solid #0CADC0;
 }
 
@@ -436,8 +436,8 @@ header label .fa-bars::after {
   content: '';
   display: block;
   height: 50px;
-  width: 70px;
-  background: #0CADC0;
+  width: 75px;
+  background: #1A315C;
   position: absolute;
   top: -10px;
   left: -12px;
@@ -446,41 +446,6 @@ header label .fa-bars::after {
 
 header input[id="menu-toggle"] {
   display: none;
-}
-
-.header-nav {
-  position: fixed;
-  right: -100%;
-  top: 0;
-  width: 100%;
-  z-index: 8;
-  padding: 80px 0;
-  background: #1A315C;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.header-nav li {
-  display: block;
-  margin: 0;
-  border-bottom: 1px solid #0CADC0;
-}
-
-.header-nav li:first-of-type {
-  border-top: 1px solid #0CADC0;
-}
-
-.header-nav a {
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 40px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.header-nav a:hover, .header-nav a:focus {
-  background: #0CADC0;
-  border: none;
 }
 
 .techniques-section h2,
@@ -1049,14 +1014,14 @@ footer p {
   .header-nav li:first-of-type {
     border-top: 1px solid #0CADC0;
   }
-  .header-nav a {
+  .header-nav li a {
     color: #fff;
     font-size: 1.5rem;
     padding: 30px;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
   }
-  .header-nav a:hover, .header-nav a:focus {
+  .header-nav li a:hover, .header-nav li a:focus {
     background: #0CADC0;
     border: none;
   }

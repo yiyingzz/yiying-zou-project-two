@@ -13,7 +13,7 @@
     margin-top: 0;
 }
 
-nav {
+.header-nav {
 
     li {
         list-style: none;
@@ -92,8 +92,8 @@ header {
                 content: '';
                 display: block;
                 height: 50px;
-                width: 70px;
-                background: $accentColor;
+                width: 75px;
+                background: $secondaryColor;
                 position: absolute;
                 top: -10px;
                 left: -12px;
@@ -109,36 +109,3 @@ header {
 }
 
 
-.header-nav {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    width: 100%;
-    z-index: 8;
-    padding: 80px 0;
-    background: $secondaryColor; 
-    transition: 0.3s all;   
-
-    li {
-        display: block;
-        margin: 0;
-        border-bottom: 1px solid $accentColor;
-        
-        &:first-of-type {
-            border-top: 1px solid $accentColor;
-        }
-    }
-    
-    a {
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 40px;
-        transition: 0.3s all;
-
-        &:hover,
-        &:focus {
-            background: $accentColor;
-            border: none;
-        }
-    }
-}
