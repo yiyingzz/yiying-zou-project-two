@@ -267,6 +267,10 @@
 
 
 @media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
 
     .wrapper,
     .discover-text,
@@ -277,7 +281,7 @@
     .blog-article {
         border: 0;
     }
-    
+
     .blog-text-container,
     .comments-section,
     .comment-form-section {
