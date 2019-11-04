@@ -18,14 +18,14 @@
         margin-top: 10px;
     }
 
-    div {
-        padding: 50px 0;
-    }
-
-    
     button {
         @include buttonStyles($secondaryColor, $secondaryTextColor);
     }
+}
+
+.techniques-text-container,
+.techniques-img-container {
+    padding: 50px 0;
 }
 
 .techniques-text-container {
