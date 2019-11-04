@@ -46,15 +46,11 @@ $bodyFontSize: 1rem;
     }
 }
 
-// Mixin to align some content on blog & index page on bigger screens
-@mixin wideScreenPaddingLeft {
-    @media (min-width: 1600px) {
-        padding-left: calc(1600px * 0.075);
-    }
-}
+// Mixin for box-shadows
+// @mixin boxShadowRight {
+//     box-shadow: 20px 20px 0px $accentColor;
+// }
 
-@mixin wideScreenPaddingRight {
-    @media (min-width: 1600px) {
-        padding-right: calc(1600px * 0.075);
-    }
-}
+// @mixin boxShadowLeft {
+//     box-shadow: -20px 20px 0px $accentColor;
+// }

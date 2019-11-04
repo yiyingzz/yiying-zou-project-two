@@ -258,12 +258,31 @@
     .connect-text p {
         text-align: center;
     }
+
+    .contact-social-icons {
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
 
 @media (max-width: 480px) {
 
-    .wrapper {
+    .wrapper,
+    .discover-text,
+    .locations-text {
         width: 92%;
+    }
+
+    .blog-article {
+        border: 0;
+    }
+    
+    .blog-text-container,
+    .comments-section,
+    .comment-form-section {
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
     .header-home h1 {
@@ -286,10 +305,6 @@
 
         img {
             width: 100%;
-        }
-
-        img:first-of-type {
-            // margin-bottom: 50px;
         }
 
         img:nth-of-type(2) {
@@ -330,5 +345,11 @@
 
     .contact-form {
         width: 100%;
+        box-shadow: none;
+    }
+
+    .contact-social-icons a {
+        margin: 30px 0;
+        font-size: calc(2rem + 2vw);
     }
 }

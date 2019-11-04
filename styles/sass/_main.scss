@@ -202,6 +202,7 @@
     position: relative;
     top: -110px;
     width: 70%;
+    // @include boxShadowRight;
     @include formStyles($secondaryColor, $secondaryTextColor);
     
     input[id="name"],
