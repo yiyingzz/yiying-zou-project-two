@@ -22,21 +22,20 @@
         padding: 50px 0;
     }
 
-    .techniques-text-container {
-        width: calc(70% - 40px);
-    }
-
-    .techniques-img-container {
-        width: 30%;
-        align-self: center;
-    }
-
+    
     button {
         @include buttonStyles($secondaryColor, $secondaryTextColor);
     }
 }
 
+.techniques-text-container {
+    width: calc(70% - 40px);
+}
 
+.techniques-img-container {
+    width: 30%;
+    align-self: center;
+}
 .gallery,
 .discover-section {
     background: $secondaryColor;
@@ -81,47 +80,49 @@
     justify-content: space-between;
     align-items: center;
 
-    .discover-box,
-    .locations-box {
-        width: calc(50% - 80px);
-    }
-    
-    .discover-img-container img,
-    .locations-img-container img {
-        width: 100%;
-    }
+}
 
-    .discover-text {
-        padding-right: 7.5vw;
-        @include wideScreenPaddingRight;
-    }
-    
-    .locations-text {
-        padding-left: 7.5vw;
-        @include wideScreenPaddingLeft;
-    }
+.discover-box,
+.locations-box {
+    width: calc(50% - 80px);
+}
 
-    .locations-img-container {
-        order: 1;
-        position: relative;
-        bottom: -70px;
-    }
+.discover-img-container img,
+.locations-img-container img {
+    width: 100%;
+}
 
-    .discover-img-container {
-        position: relative;
-        top: -70px;
-    }
+.discover-text {
+    padding-right: calc(1600px * 0.075);
+    // padding-right: 7.5vw;
+}
+
+.locations-text {
+    padding-left: calc(1600px * 0.075);
+    // padding-left: 7.5vw;
+}
+
+.locations-img-container {
+    order: 1;
+    position: relative;
+    bottom: -70px;
+}
+
+.discover-img-container {
+    position: relative;
+    top: -70px;
 }
 
 .connect-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 100px;
+}
 
-    .connect-container {
-        width: calc(50% - 8px);
-        display: flex;
-    }
+.connect-container {
+    width: calc(50% - 8px);
+    display: flex;
 }
 
 // Icon styles
