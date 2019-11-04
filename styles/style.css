@@ -425,7 +425,7 @@ header label {
   position: fixed;
   right: 10px;
   top: 10px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   z-index: 10;
   display: none;
 }
@@ -438,7 +438,7 @@ header label .fa-bars {
 header label .fa-bars::after {
   content: '';
   display: block;
-  height: 60px;
+  height: 55px;
   width: 75px;
   background: #0CADC0;
   position: absolute;
@@ -1011,7 +1011,7 @@ footer p {
     top: 0;
     width: 100%;
     z-index: 8;
-    padding: 60px 0 40px 0;
+    padding: 55px 0 40px 0;
     background: #1A315C;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
@@ -1150,5 +1150,28 @@ footer p {
   }
   .contact-social-icons a:hover, .contact-social-icons a:focus {
     color: #0CADC0;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery-container img {
+    width: calc(50% - 25px);
+  }
+  .gallery-container img:nth-of-type(3) {
+    display: none;
+  }
+  .connect-section .connect-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .connect-icon {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .connect-text h2 {
+    text-align: center;
   }
 }

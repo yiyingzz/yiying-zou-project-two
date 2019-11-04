@@ -11,7 +11,7 @@
         top: 0;
         width: 100%;
         z-index: 8;
-        padding: 60px 0 40px 0;
+        padding: 55px 0 40px 0;
         background: $secondaryColor; 
         transition: 0.3s all;   
         
@@ -184,3 +184,32 @@
         }
     }
 } 
+
+
+@media (max-width: 650px) {
+    .gallery-container {
+        img {
+            width: calc(50% - 25px);
+        }
+
+        img:nth-of-type(3) {
+            display: none;
+        }
+    }
+
+    .connect-section {
+        .connect-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
+    .connect-icon {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .connect-text h2 {
+        text-align: center;
+    }
+}
