@@ -2,22 +2,22 @@
 
 @media (max-width: 1600px) {
     .discover-text {
-        padding-right: $gutterMedium;
+        padding-right: $gutter;
     }
     
     .locations-text,
     .blog-text-container,
     .comments-section,
     .comment-form-section {
-        padding-left: $gutterMedium;
+        padding-left: $gutter;
     }
 
     .contact-form {
-        margin-left: $gutterMedium;
+        margin-left: $gutter;
     }
 
     .contact-info {
-        padding-right: $gutterMedium;
+        padding-right: $gutter;
     }
 }
 
@@ -103,13 +103,23 @@
     .techniques-section h2,
     .connect-section h2, 
     .discover-section h3,
-    .search-section h3 {
+    .search-section h3,
+    .blog-section h2,
+    .comments-section h3 {
         font-size: 1.8rem;
         line-height: 1.2;
     }
 
     .techniques-section {
         padding-top: 60px;
+    }
+
+    .techniques-text-container {
+        padding: 0;
+    }
+    
+    .techniques-img-container {
+        order: -1;
     }
 
     .connect-container {
@@ -166,16 +176,15 @@
     }
 
     .blog-text-container {
-        // calculating for the border
-        padding-right: calc($gutterMedium - 10px);
+        padding-right: calc($gutter - 10px);
     }
     
     .blog-aside-container {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
-        padding-left: $gutterMedium;
-        padding-right: $gutterMedium;
+        padding-left: $gutter;
+        padding-right: $gutter;
     }
     
     .blog-aside-img-container {
@@ -194,7 +203,7 @@
 
     .comments-section,
     .comment-form-section {
-        padding-right: $gutterMedium;
+        padding-right: $gutter;
     }
 
     .comment-form {
@@ -215,7 +224,7 @@
 
     .contact-form {
         width: calc(100% - 20px);
-        margin-right: $gutterMedium;
+        margin-right: $gutter;
 
         input[id="name"],
         input[id="email"] {
@@ -228,7 +237,7 @@
         width: 100%;
         padding-top: 0;
         padding-bottom: 100px;
-        padding-left: $gutterMedium;
+        padding-left: $gutter;
         text-align: center;
     }
 
@@ -247,13 +256,6 @@
     }
 } 
 
-// @media (max-width: 760px) {
-
-//     .home-box-img {
-//         display: none;
-//     }
-// }
-
 @media (max-width: 680px) {
     
     .header-nav {
@@ -270,10 +272,13 @@
         height: 450px;
     }
     
-    .header-home h1,
+    .header-home h1 {
+        font-size: calc(2.5rem - 1.5vw);
+    }
+
     .header-blog h1,
     .header-contact h1 {
-        font-size: calc(2.5rem - 1.5vw);
+        font-size: 2.6rem;
         width: 70%;
         line-height: 1.3;
     }
@@ -281,8 +286,14 @@
     .techniques-section h2,
     .connect-section h2, 
     .discover-section h3,
-    .search-section h3 {
+    .search-section h3,
+    .blog-section h2,
+    .comments-section h3 {
         font-size: 1.5rem;
+    }
+
+    .blog-aside-text-box h4 {
+        font-size: 1.3rem;
     }
 
     .techniques-section {
@@ -292,11 +303,9 @@
     .techniques-text-container {
         width: 100%;
         text-align: center;
-        padding: 0;
     }
     
     .techniques-img-container {
-        order: -1;
         width: calc(100% - 20px);
         align-self: flex-end;
         padding-top: 0;
@@ -340,10 +349,9 @@
         line-height: 1.5;
     }
 
-    .header-home h1 {
-        font-size: 1.7rem;
-        // margin-bottom: 50px;
-    }
+    // .header-home h1 {
+        // font-size: 1.7rem;
+    // }
 
     .wrapper,
     .discover-text,

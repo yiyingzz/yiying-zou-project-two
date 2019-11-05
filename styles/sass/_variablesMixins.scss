@@ -12,7 +12,9 @@ $primaryFont: 'Lato', sans-serif;
 $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
-$gutterMedium: 7.5vw;
+// Based on wrapper of 85% & 92% (mobile) 
+$gutter: 7.5vw;
+$gutterWide: calc(1600px * 0.075);
 $gutterSmall: 4vw;
 
 // Mixins

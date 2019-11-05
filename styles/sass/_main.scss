@@ -93,11 +93,11 @@
 }
 
 .discover-text {
-    padding-right: calc(1600px * 0.075);
+    padding-right: $gutterWide;
 }
 
 .locations-text {
-    padding-left: calc(1600px * 0.075);
+    padding-left: $gutterWide;
 }
 
 .locations-img-container {
@@ -201,7 +201,7 @@
     top: -100px;
     width: 100%;
     padding: 40px;
-    margin-left: calc(1600px * 0.075);
+    margin-left: $gutterWide;
     @include formStyles($secondaryColor, $secondaryTextColor);
     
     input[id="name"],
@@ -221,7 +221,7 @@
 
 .contact-info {
     padding: 100px 0 0 100px;
-    padding-right: calc(1600px * 0.075);
+    padding-right: $gutterWide;
 
     p:not(:first-of-type) {
         margin: 0;

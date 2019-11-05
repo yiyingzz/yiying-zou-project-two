@@ -16,7 +16,7 @@
 .blog-text-container,
 .comments-section,
 .comment-form-section {
-    padding: 0 50px 0 calc(1600px * 0.075);
+    padding: 0 50px 0 $gutterWide;
 }
 
 .blog-article,
@@ -104,7 +104,7 @@
 
 .blog-comment {
     display: flex;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 
 .commenter-img {
