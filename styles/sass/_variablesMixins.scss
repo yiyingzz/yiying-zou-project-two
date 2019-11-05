@@ -46,16 +46,8 @@ $bodyFontSize: 1rem;
     }
 }
 
-// Mixin for box-shadows
-// @mixin boxShadowRight {
-//     box-shadow: 20px 20px 0px $accentColor;
-// }
-
-// @mixin boxShadowLeft {
-//     box-shadow: -20px 20px 0px $accentColor;
-// }
-
-// Mixin for padding
+// Mixins for padding:
+// Based on 85% wrapper
 @mixin paddingLeft {
     padding-left: 7.5vw;   
 }
@@ -64,6 +56,7 @@ $bodyFontSize: 1rem;
     padding-right: 7.5vw;
 }
 
+// Based on 92% wrapper
 @mixin paddingLeftSmall {
     padding-left: 4vw;
 }

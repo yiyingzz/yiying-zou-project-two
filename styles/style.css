@@ -1054,7 +1054,7 @@ footer p {
   .connect-section h2,
   .discover-section h3,
   .search-section h3 {
-    font-size: calc(2rem - 1.5vw);
+    font-size: calc(2rem - 2vw);
     line-height: 1.2;
   }
   .techniques-section {
@@ -1065,7 +1065,7 @@ footer p {
     margin: 30px 0;
   }
   .connect-icon {
-    top: 0;
+    top: -5px;
   }
   .discover-container,
   .locations-container {
@@ -1293,14 +1293,7 @@ footer p {
     padding-top: 70px;
   }
   .blog-aside-img-container {
-    right: 0;
-    height: 200px;
     display: none;
-  }
-  .blog-aside-img-container img {
-    width: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
   .commenter-img {
     display: none;

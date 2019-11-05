@@ -95,7 +95,7 @@
     .connect-section h2, 
     .discover-section h3,
     .search-section h3 {
-        font-size: calc(2rem - 1.5vw);
+        font-size: calc(2rem - 2vw);
         line-height: 1.2;
     }
 
@@ -109,7 +109,7 @@
     }
 
     .connect-icon {
-        top: 0;
+        top: -5px;
     }
 
     .discover-container,
@@ -374,16 +374,7 @@
     }
 
     .blog-aside-img-container {
-        right: 0;
-        height: 200px;
-
-        // THISSSS vvvvvvv
         display: none;
-        
-        img {
-            width: auto;
-            object-fit: contain;
-        }
     }
 
     .commenter-img {
