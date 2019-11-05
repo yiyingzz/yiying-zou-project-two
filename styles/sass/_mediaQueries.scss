@@ -38,22 +38,19 @@
     // slide-out nav styles
     .header-nav {
         position: fixed;
-        right: -100%;
+        right: -70%;
         top: 0;
-        width: 100%;
+        width: 70%;
         z-index: 8;
         padding: 45px 0 45px 0;
         background: $secondaryColor; 
-        transition: 0.3s all;   
+        transition: 0.3s all;
+        border-left: 20px solid $accentColor;
+        border-bottom: 20px solid $accentColor;   
         
         li {
             display: block;
             margin: 0;
-            border-bottom: 1px solid $accentColor;
-            
-            &:first-of-type {
-                border-top: 1px solid $accentColor;
-            }
 
             a {
                 color: #fff;
@@ -103,7 +100,7 @@
     .connect-section h2, 
     .discover-section h3,
     .search-section h3 {
-        font-size: calc(2rem - 2vw);
+        font-size: 1.8rem;
         line-height: 1.2;
     }
 
@@ -117,7 +114,7 @@
     }
 
     .connect-icon {
-        top: -5px;
+        top: 2px;
     }
 
     .discover-container,
@@ -248,16 +245,21 @@
 
 @media (max-width: 680px) {
     
-    .header-blog,
-    .header-contact {
-        height: 450px;
+    .header-nav {
+        right: -100%;
+        width: 100%;
     }
-    
+
     .header-home {
         max-height: 400px;
         // height: initial;
     }
 
+    .header-blog,
+    .header-contact {
+        height: 450px;
+    }
+    
     .header-home h1,
     .header-blog h1,
     .header-contact h1 {
@@ -268,6 +270,13 @@
 
     .home-box-img {
         display: none;
+    }
+
+    .techniques-section h2,
+    .connect-section h2, 
+    .discover-section h3,
+    .search-section h3 {
+        font-size: 1.5rem;
     }
 
     .techniques-section {
@@ -304,7 +313,7 @@
     
     .connect-icon {
         margin-right: 0;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .connect-text h2,
@@ -367,6 +376,10 @@
         img:nth-of-type(2) {
             display: none;
         }
+    }
+
+    .blog-img-container img {
+        width: calc(100% - 20px);
     }
 
     .blog-aside-container {
