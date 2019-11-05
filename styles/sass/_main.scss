@@ -94,12 +94,10 @@
 
 .discover-text {
     padding-right: calc(1600px * 0.075);
-    // padding-right: 7.5vw;
 }
 
 .locations-text {
     padding-left: calc(1600px * 0.075);
-    // padding-left: 7.5vw;
 }
 
 .locations-img-container {
@@ -202,6 +200,7 @@
     position: relative;
     top: -110px;
     width: 70%;
+    padding: 40px;
     // @include boxShadowRight;
     @include formStyles($secondaryColor, $secondaryTextColor);
     

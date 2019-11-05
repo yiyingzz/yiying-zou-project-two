@@ -444,11 +444,11 @@ header input[id="menu-toggle"] {
   content: '';
   display: block;
   height: 45px;
-  width: 75px;
+  width: 45px;
   background: #0CADC0;
   position: absolute;
-  top: -10px;
-  left: -12px;
+  top: -11px;
+  left: -11px;
   z-index: -1;
 }
 
@@ -1110,13 +1110,20 @@ footer p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 50px;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
   }
   .blog-aside-img-container {
     width: 30%;
+    right: 0;
+  }
+  .blog-aside-img-container img {
+    -webkit-box-shadow: 20px 20px 0px #0CADC0;
+            box-shadow: 20px 20px 0px #0CADC0;
   }
   .blog-aside-text-container {
     width: calc(70% - 30px);
-    padding: 30px;
+    padding: 50px 0 30px 30px;
   }
   .comment-form {
     padding-right: 0;

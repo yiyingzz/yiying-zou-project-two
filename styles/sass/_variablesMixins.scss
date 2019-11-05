@@ -54,3 +54,20 @@ $bodyFontSize: 1rem;
 // @mixin boxShadowLeft {
 //     box-shadow: -20px 20px 0px $accentColor;
 // }
+
+// Mixin for padding
+@mixin paddingLeft {
+    padding-left: 7.5vw;   
+}
+
+@mixin paddingRight {
+    padding-right: 7.5vw;
+}
+
+@mixin paddingLeftSmall {
+    padding-left: 4vw;
+}
+
+@mixin paddingRightSmall {
+    padding-right: 4vw;
+}

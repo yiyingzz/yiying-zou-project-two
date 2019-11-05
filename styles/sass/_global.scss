@@ -64,8 +64,7 @@ button {
     padding: 10px 40px;
 }
 
-// Image drop-shadows
-
+// Image box-shadows
 .right-shadow {
     box-shadow: 20px 20px 0px $accentColor;
 }
@@ -81,7 +80,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px;
+    // padding: 40px;
 
     input[id="name"],
     input[id="email"] {

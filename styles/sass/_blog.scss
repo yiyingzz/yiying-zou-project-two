@@ -123,7 +123,6 @@
 }
 
 .comment-form {
-    padding-left: 0;
     @include formStyles($primaryColor, $primaryTextColor);
 
     input[id="name"],
