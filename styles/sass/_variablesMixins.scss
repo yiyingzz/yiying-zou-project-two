@@ -12,6 +12,9 @@ $primaryFont: 'Lato', sans-serif;
 $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
+$gutterMedium: 7.5vw;
+$gutterSmall: 4vw;
+
 // Mixins
 
 @mixin formStyles($formColor, $formTextColor) {
@@ -45,23 +48,4 @@ $bodyFontSize: 1rem;
         color: $secondaryTextColor;
         border: 2px solid $secondaryTextColor;
     }
-}
-
-// Mixins for padding:
-// Based on 85% wrapper
-@mixin paddingLeft {
-    padding-left: 7.5vw;   
-}
-
-@mixin paddingRight {
-    padding-right: 7.5vw;
-}
-
-// Based on 92% wrapper
-@mixin paddingLeftSmall {
-    padding-left: 4vw;
-}
-
-@mixin paddingRightSmall {
-    padding-right: 4vw;
 }
