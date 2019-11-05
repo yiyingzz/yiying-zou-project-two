@@ -164,6 +164,11 @@
         width: 100%;
     }
 
+    .blog-text-container {
+        // calculating for the border
+        padding-right: calc(7.5vw - 10px);
+    }
+    
     .blog-aside-container {
         display: flex;
         justify-content: space-between;
@@ -182,13 +187,8 @@
     }
 
     .blog-aside-text-container {
-        width: calc(70% - 30px);
-        padding: 50px 0 30px 30px;
-    }
-
-    .blog-text-container {
-        // calculating for the border
-        padding-right: calc(7.5vw - 10px);
+        width: calc(70% - 50px);
+        padding: 50px 0 30px 0;
     }
 
     .comments-section,
@@ -267,8 +267,6 @@
     }
 
     .home-box-img {
-        // bottom: -50px;
-        // width: 65%;
         display: none;
     }
 
@@ -343,6 +341,7 @@
     }
 
     .blog-text-container,
+    .blog-aside-container,
     .comments-section,
     .comment-form-section {
         @include paddingLeftSmall;

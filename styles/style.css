@@ -323,7 +323,6 @@ form input[id="name"],
 form input[id="email"] {
   width: calc(50% - 20px);
   border: 0;
-  border-bottom: 2px solid #0CADC0;
 }
 
 form textarea,
@@ -338,9 +337,9 @@ form textarea {
 }
 
 form textarea {
-  border: 2px solid #0CADC0;
   margin: 30px 0;
   resize: none;
+  border: 2px solid #0CADC0;
 }
 
 .header-top-bar {
@@ -467,7 +466,6 @@ header input[id="menu-toggle"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px dashed lime;
 }
 
 .techniques-section h2 {
@@ -719,6 +717,7 @@ header input[id="menu-toggle"] {
 .contact-form textarea {
   background: #1A315C;
   color: #fff;
+  border-bottom: 2px solid #0CADC0;
 }
 
 .contact-form input[id="name"]::-webkit-input-placeholder,
@@ -747,6 +746,12 @@ header input[id="menu-toggle"] {
 .contact-form textarea::placeholder {
   color: #fff;
   opacity: 0.7;
+}
+
+.contact-form input[id="name"]:focus,
+.contact-form input[id="email"]:focus,
+.contact-form textarea:focus {
+  border: 2px solid #fff;
 }
 
 .contact-form button {
@@ -825,11 +830,11 @@ header input[id="menu-toggle"] {
   width: calc(100% - 10px);
   z-index: 2;
   position: relative;
-  top: -170px;
+  top: -160px;
 }
 
 .blog-text-container {
-  margin-top: -100px;
+  margin-top: -90px;
   padding-bottom: 60px;
 }
 
@@ -894,7 +899,7 @@ header input[id="menu-toggle"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin: 70px 0;
 }
 
 .commenter-img {
@@ -902,12 +907,8 @@ header input[id="menu-toggle"] {
   margin-right: 30px;
 }
 
-.comment-text-container p:first-of-type {
-  margin-top: 0;
-}
-
 .comment-text-container p {
-  margin-top: 5px;
+  margin: 0;
 }
 
 .comment-form {
@@ -920,6 +921,7 @@ header input[id="menu-toggle"] {
 .comment-form textarea {
   background: #CCEDFB;
   color: #1E1713;
+  border-bottom: 2px solid #0CADC0;
 }
 
 .comment-form input[id="name"]::-webkit-input-placeholder,
@@ -948,6 +950,12 @@ header input[id="menu-toggle"] {
 .comment-form textarea::placeholder {
   color: #1A315C;
   opacity: 0.7;
+}
+
+.comment-form input[id="name"]:focus,
+.comment-form input[id="email"]:focus,
+.comment-form textarea:focus {
+  border: 2px solid #1A315C;
 }
 
 .comment-form button {
@@ -1114,6 +1122,9 @@ footer p {
   .blog-aside {
     width: 100%;
   }
+  .blog-text-container {
+    padding-right: calc(7.5vw - 10px);
+  }
   .blog-aside-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1134,11 +1145,8 @@ footer p {
             box-shadow: 20px 20px 0px #0CADC0;
   }
   .blog-aside-text-container {
-    width: calc(70% - 30px);
-    padding: 50px 0 30px 30px;
-  }
-  .blog-text-container {
-    padding-right: calc(7.5vw - 10px);
+    width: calc(70% - 50px);
+    padding: 50px 0 30px 0;
   }
   .comments-section,
   .comment-form-section {
@@ -1271,6 +1279,7 @@ footer p {
     border: 0;
   }
   .blog-text-container,
+  .blog-aside-container,
   .comments-section,
   .comment-form-section {
     padding-left: 4vw;

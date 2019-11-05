@@ -22,6 +22,7 @@ $bodyFontSize: 1rem;
 @mixin inputStyles($inputColor, $inputTextColor, $placeholderColor) {
     background: $inputColor;
     color: $inputTextColor;
+    border-bottom: 2px solid $accentColor;
 
     &::placeholder {
         color: $placeholderColor;

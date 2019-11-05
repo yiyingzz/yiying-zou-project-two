@@ -86,9 +86,6 @@ form {
     input[id="email"] {
         width: calc(50% - 20px);
         border: 0;
-
-        // SHOULD THIS GO IN MIXIN ??????????????????
-        border-bottom: 2px solid $accentColor;
     }
 
     textarea,
@@ -103,10 +100,8 @@ form {
     }
 
     textarea {
-
-        // SHOULD THIS GO IN MIXIN ??????????????????
-        border: 2px solid $accentColor;
         margin: 30px 0;
         resize: none;
+        border: 2px solid $accentColor;
     }
 }

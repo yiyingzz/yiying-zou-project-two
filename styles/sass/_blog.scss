@@ -35,11 +35,11 @@
     width: calc(100% - 10px);
     z-index: 2;
     position: relative;
-    top: -170px;
+    top: -160px;
 }
 
 .blog-text-container {
-    margin-top: -100px;
+    margin-top: -90px;
     padding-bottom: 60px;
     
     h2 {
@@ -104,7 +104,7 @@
 
 .blog-comment {
     display: flex;
-    margin-top: 50px;
+    margin: 70px 0;
 }
 
 .commenter-img {
@@ -112,14 +112,8 @@
     margin-right: 30px;
 }
 
-.comment-text-container {
-    p:first-of-type {
-        margin-top: 0;
-    }
-
-    p {
-        margin-top: 5px;
-    }
+.comment-text-container p {
+    margin: 0;
 }
 
 .comment-form {
@@ -129,6 +123,10 @@
     input[id="email"],
     textarea {
         @include inputStyles($primaryColor, $primaryTextColor, $secondaryColor);
+
+        &:focus {
+            border: 2px solid $secondaryColor;
+        }
     }
 
     button {
