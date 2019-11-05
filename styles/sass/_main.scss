@@ -198,10 +198,10 @@
 
 .contact-form {
     position: relative;
-    top: -110px;
-    width: 70%;
+    top: -100px;
+    width: 100%;
     padding: 40px;
-    // @include boxShadowRight;
+    margin-left: calc(1600px * 0.075);
     @include formStyles($secondaryColor, $secondaryTextColor);
     
     input[id="name"],
@@ -217,6 +217,7 @@
 
 .contact-info {
     padding: 100px 0 0 100px;
+    padding-right: calc(1600px * 0.075);
 
     p:not(:first-of-type) {
         margin: 0;

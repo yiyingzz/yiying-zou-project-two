@@ -10,64 +10,67 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header-contact">
+    <div class="outer-wrapper">
+        
+        <header class="header-contact">
 
-        <div class="wrapper">
+            <div class="wrapper">
 
-            <div class="header-top-bar">
-                <p class="logo">Textilee</p>
-                
-                <input type="checkbox" id="menu-toggle" name="menu-toggle">
-                <nav class="header-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="header-top-bar">
+                    <p class="logo">Textilee</p>
+                    
+                    <input type="checkbox" id="menu-toggle" name="menu-toggle">
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
 
-                <label for="menu-toggle" aria-label="Click here to open navigation menu"><span class="visuallyHidden">Menu</span><i class="fas fa-bars" aria-hidden></i></label>
-            </div>
-            
-            <h1>Get in touch</h1>
-        </div>
-    </header>
-
-    <main>
-        <section class="contact-section wrapper">
-
-            <form action="#" method="#" class="contact-form right-shadow">
-                <label for="name" class="visuallyHidden">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-
-                <label for="email" class="visuallyHidden">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Email address">
-
-                <label for="message" class="visuallyHidden">Message</label>
-                <textarea id="message" name="message" placeholder="Message" rows="7"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-
-            <div class="contact-info">
-                <div class="contact-social-icons">
-                    <a href="#" aria-label="Go to our Facebook page"><i class="fab fa-facebook-f" aria-hidden></i></a>
-                    <a href="#" aria-label="Go to our Instagram page"><i class="fab fa-instagram" aria-hidden></i></a>
-                    <a href="#" aria-label="Go to our Twitter page"><i class="fab fa-twitter" aria-hidden></i></a>
-                    <a href="#" aria-label="Go to our WhatsApp page"><i class="fab fa-whatsapp" aria-hidden></i></a>
+                    <label for="menu-toggle" aria-label="Click here to open navigation menu"><span class="visuallyHidden">Menu</span><i class="fas fa-bars" aria-hidden></i></label>
                 </div>
-                <p>info@email.com</p>
-
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V 2D5</p>
-
+                
+                <h1>Get in touch</h1>
             </div>
-        </section>
-    </main>
+        </header>
 
+        <main>
+            <section class="contact-section">
+                <form action="#" method="#" class="contact-form right-shadow">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+
+                    <label for="email" class="visuallyHidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+
+                    <label for="message" class="visuallyHidden">Message</label>
+                    <textarea id="message" name="message" placeholder="Message" rows="7"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-social-icons">
+                        <a href="#" aria-label="Go to our Facebook page"><i class="fab fa-facebook-f" aria-hidden></i></a>
+                        <a href="#" aria-label="Go to our Instagram page"><i class="fab fa-instagram" aria-hidden></i></a>
+                        <a href="#" aria-label="Go to our Twitter page"><i class="fab fa-twitter" aria-hidden></i></a>
+                        <a href="#" aria-label="Go to our WhatsApp page"><i class="fab fa-whatsapp" aria-hidden></i></a>
+                    </div>
+                    <p>info@email.com</p>
+                    
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V 2D5</p>
+                </div>
+            </section>
+        </main>
+
+        
+    </div>
+    
     <footer>
         <p>Copyright &copy; 2019 Juno College</p>
     </footer>
