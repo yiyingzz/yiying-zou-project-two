@@ -76,7 +76,6 @@
 
 
 // SLIDE-OUT NAVIGATION
-
 header {
     label {
         position: fixed;
@@ -94,13 +93,13 @@ header {
 .fa-bars {
     color: #fff;
     position: relative;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 1;
 
     &::after {
         content: '';
         display: block;
-        height: 55px;
+        height: 45px;
         width: 75px;
         background: $accentColor;
         position: absolute;

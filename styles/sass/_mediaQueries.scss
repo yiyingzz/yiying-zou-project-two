@@ -34,7 +34,7 @@
         top: 0;
         width: 100%;
         z-index: 8;
-        padding: 55px 0 40px 0;
+        padding: 45px 0 45px 0;
         background: $secondaryColor; 
         transition: 0.3s all;   
         
@@ -75,13 +75,13 @@
     
     .home-box-img {
         bottom: -90px;
-        width: 50%;
+        width: 52%;
     }
 
     .header-home,
     .header-blog,
     .header-contact {
-        height: 500px;
+        max-height: 500px;
     }
 
     .header-home h1 {
@@ -90,6 +90,16 @@
         width: 75%;
         margin-top: 30px;
     }
+
+    .techniques-section,
+    .connect-section {
+        h2 {
+            font-size: calc(2rem - 1vw);
+            line-height: 1.5;
+            // letter-spacing: 2.7px;
+        }
+    }
+
     
     .techniques-section {
         padding-top: 60px;
@@ -206,16 +216,30 @@
     }
 } 
 
-@media (max-width: 650px) {
-    .header-home h1 {
-        font-size: calc(2.5rem - 1.2vw);
+@media (max-width: 680px) {
+    
+    .header-blog,
+    .header-contact {
+        height: 450px;
+    }
+    
+    .header-home {
+        max-height: 400px;
+        // height: initial;
+    }
+
+    .header-home h1,
+    .header-blog h1,
+    .header-contact h1 {
+        font-size: calc(2.5rem - 1.5vw);
         width: 70%;
         line-height: 1.3;
     }
 
     .home-box-img {
-        bottom: -50px;
-        width: 65%;
+        // bottom: -50px;
+        // width: 65%;
+        display: none;
     }
 
     .techniques-section {
@@ -232,6 +256,7 @@
         order: -1;
         width: calc(100% - 20px);
         align-self: flex-end;
+        padding-top: 0;
     }
 
     .gallery-container {
@@ -272,6 +297,11 @@
         line-height: 1.5;
     }
 
+    .header-home h1 {
+        font-size: calc(1.5rem + 1.5vw);
+        margin-bottom: 50px;
+    }
+
     .wrapper,
     .discover-text,
     .locations-text {
@@ -290,14 +320,8 @@
     }
 
     .header-home h1 {
-        width: 70%;
-        line-height: 1.5;
-    }
-
-    .home-box-img {
-        // bottom: -80px;
         // width: 70%;
-        display: none;
+        // line-height: 1.5;
     }
 
     .techniques-img-container {
