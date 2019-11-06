@@ -442,7 +442,7 @@ header input[id="menu-toggle"] {
   content: '';
   display: block;
   height: 45px;
-  width: 46px;
+  width: 45px;
   background: #0CADC0;
   position: absolute;
   top: -11px;
@@ -1011,12 +1011,12 @@ footer p {
     top: 0;
     width: 70%;
     z-index: 9;
-    padding: 45px 0 45px 0;
+    padding: 44px 0;
     background: #1A315C;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
-    border-left: 20px solid #0CADC0;
-    border-bottom: 20px solid #0CADC0;
+    border-left: 10px solid #0CADC0;
+    border-bottom: 10px solid #0CADC0;
   }
   .header-nav li {
     display: block;

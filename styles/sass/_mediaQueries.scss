@@ -42,11 +42,11 @@
         top: 0;
         width: 70%;
         z-index: 9; // so it's under the menu icon
-        padding: 45px 0 45px 0;
+        padding: 44px 0;
         background: $secondaryColor; 
         transition: 0.3s all;
-        border-left: 20px solid $accentColor;
-        border-bottom: 20px solid $accentColor;   
+        border-left: 10px solid $accentColor;
+        border-bottom: 10px solid $accentColor;   
         
         li {
             display: block;
