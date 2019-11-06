@@ -74,7 +74,6 @@
     background-image: url(../assets/contact-header.jpg);
 }
 
-
 // SLIDE-OUT NAVIGATION
 header {
     label {
@@ -90,6 +89,7 @@ header {
     }
 }
 
+// Menu toggle icon
 .fa-bars {
     color: #fff;
     position: relative;
@@ -100,7 +100,7 @@ header {
         content: '';
         display: block;
         height: 45px;
-        width: 45px;
+        width: 46px;
         background: $accentColor;
         position: absolute;
         top: -11px;
