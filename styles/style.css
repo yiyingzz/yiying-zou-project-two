@@ -1164,8 +1164,8 @@ footer p {
         flex-wrap: wrap;
   }
   .contact-form {
-    width: calc(100% - 40px);
-    margin-right: calc(7.5vw + 20px);
+    width: calc(100% - 20px);
+    margin-right: 7.5vw;
   }
   .contact-form input[id="name"],
   .contact-form input[id="email"] {
