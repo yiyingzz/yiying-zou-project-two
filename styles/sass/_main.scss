@@ -1,5 +1,6 @@
-// Index page
+// INDEX PAGE
 
+// Learn new techniques
 .techniques-section,
 .connect-section {
     h2 {
@@ -38,6 +39,7 @@
     align-self: center;
 }
 
+// Gallery aside
 .gallery,
 .discover-section {
     background: $secondaryColor;
@@ -51,10 +53,10 @@
 
     img {
         width: calc(100%/3 - 25px);
-        display: block;
     }
 }
 
+// Discover online markets, New locations
 .discover-section,
 .search-section {
     h3 {
@@ -90,11 +92,6 @@
     width: calc(50% - 80px);
 }
 
-.discover-img-container img,
-.locations-img-container img {
-    width: 100%;
-}
-
 .discover-text {
     padding-right: $gutterWide;
 }
@@ -114,6 +111,7 @@
     top: -70px;
 }
 
+// Connect section (Upcoming Events, Community, etc.)
 .connect-section {
     display: flex;
     flex-wrap: wrap;
@@ -172,12 +170,7 @@
     left: 3px;
 }
 
-// DECORATIVE BANNER
-
-.banner-container img {
-    width: 100%;
-}
-
+// Search styles
 .search-section {
     text-align: center;
     padding: 90px 0 120px;
@@ -193,7 +186,6 @@
 }
 
 // CONTACT PAGE
-
 .contact-section {
     display: flex;
     padding: 0;

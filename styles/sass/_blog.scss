@@ -19,6 +19,7 @@
     padding: 0 50px 0 $gutterWide;
 }
 
+// Blog article main body
 .blog-article,
 .blog-aside-container {
     background: $secondaryColor;
@@ -86,7 +87,8 @@
     top: -20px;
 }
 
-// comments
+
+// Comments section
 .comments-section {
     margin-top: 50px;
 
@@ -108,7 +110,7 @@
 }
 
 .commenter-img {
-    min-width: 15%;
+    min-width: 20%;
     margin-right: 30px;
 }
 
@@ -116,6 +118,7 @@
     margin: 0;
 }
 
+// Comment form
 .comment-form {
     @include formStyles($primaryColor, $primaryTextColor);
 

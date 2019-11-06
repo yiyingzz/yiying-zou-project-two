@@ -1,24 +1,28 @@
-// Variables
+// VARIABLES
 
+// Colours
 $primaryColor: #CCEDFB;
 $secondaryColor: #1A315C; 
 $tertiaryColor: #161515; //second black
 $accentColor: #0CADC0;
 
+// Text colours
 $primaryTextColor: #1E1713; // first black
 $secondaryTextColor: #fff;
 
+// Font
 $primaryFont: 'Lato', sans-serif;
 $secondaryFont: 'Pacifico', cursive;
 $bodyFontSize: 1rem;
 
-// Based on wrapper of 85% & 92% (mobile) 
+// Gutter (margins) based on wrapper of 85% & 92% (mobile) 
 $gutter: 7.5vw;
 $gutterWide: calc(1600px * 0.075);
 $gutterSmall: 4vw;
 
-// Mixins
+// MIXINS
 
+// Form styles
 @mixin formStyles($formColor, $formTextColor) {
     background: $formColor;
     color: $formTextColor;
@@ -35,6 +39,7 @@ $gutterSmall: 4vw;
     }
 }
 
+// Button styles
 @mixin buttonStyles($bgColor, $textColor) {
     background: $bgColor;
     color: $textColor;

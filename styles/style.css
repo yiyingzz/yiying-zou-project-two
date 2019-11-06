@@ -523,7 +523,6 @@ header input[id="menu-toggle"] {
 
 .gallery-container img {
   width: calc(100%/3 - 25px);
-  display: block;
 }
 
 .discover-section h3,
@@ -575,11 +574,6 @@ header input[id="menu-toggle"] {
 .discover-box,
 .locations-box {
   width: calc(50% - 80px);
-}
-
-.discover-img-container img,
-.locations-img-container img {
-  width: 100%;
 }
 
 .discover-text {
@@ -663,10 +657,6 @@ header input[id="menu-toggle"] {
 
 .fa-phone {
   left: 3px;
-}
-
-.banner-container img {
-  width: 100%;
 }
 
 .search-section {
@@ -904,7 +894,7 @@ header input[id="menu-toggle"] {
 }
 
 .commenter-img {
-  min-width: 15%;
+  min-width: 20%;
   margin-right: 30px;
 }
 
