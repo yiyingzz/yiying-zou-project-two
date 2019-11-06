@@ -41,7 +41,7 @@
         right: -70%;
         top: 0;
         width: 70%;
-        z-index: 8;
+        z-index: 9; // so it's under the menu icon
         padding: 45px 0 45px 0;
         background: $secondaryColor; 
         transition: 0.3s all;
